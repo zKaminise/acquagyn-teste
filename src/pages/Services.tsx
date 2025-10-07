@@ -8,16 +8,16 @@ const Services = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-20 gradient-ocean text-white">
+      <section className="relative py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center animate-fade-in">
-            <Badge variant="secondary" className="mb-4">
+            <Badge variant="default" className="mb-4">
               Nossos Serviços
             </Badge>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Serviços da Acquagyn
             </h1>
-            <p className="text-xl text-white/90">
+            <p className="text-xl text-muted-foreground">
               Descubra nossas modalidades e escolha a melhor opção para você e sua família
             </p>
           </div>
