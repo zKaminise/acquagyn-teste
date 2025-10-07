@@ -1,9 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, CarouselApi } from "@/components/ui/carousel";
 import { Waves, Award, Users, ArrowRight, Shield, Target, Sparkles, TrendingUp, Building2 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 import heroPool from "@/assets/hero-pool.jpg";
 import facilityPoolMain from "@/assets/facility-pool-main.jpg";
 import facilityPoolKids from "@/assets/facility-pool-kids.jpg";
@@ -11,6 +12,20 @@ import facilityLockers from "@/assets/facility-lockers.jpg";
 import facilityReception from "@/assets/facility-reception.jpg";
 
 const Home = () => {
+  const [api, setApi] = useState<CarouselApi>();
+  const [current, setCurrent] = useState(0);
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    if (!api) return;
+
+    setCount(api.scrollSnapList().length);
+    setCurrent(api.selectedScrollSnap());
+
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap());
+    });
+  }, [api]);
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -178,7 +193,7 @@ const Home = () => {
           </div>
 
           <div className="max-w-5xl mx-auto">
-            <Carousel className="w-full">
+            <Carousel setApi={setApi} className="w-full">
               <CarouselContent>
                 {[
                   { image: facilityPoolMain, title: "Piscina Principal", desc: "Piscina aquecida com raias profissionais e iluminação ideal" },
@@ -211,6 +226,22 @@ const Home = () => {
               <CarouselPrevious className="left-4" />
               <CarouselNext className="right-4" />
             </Carousel>
+
+            {/* Dots Indicator */}
+            <div className="flex justify-center gap-2 mt-6">
+              {Array.from({ length: count }).map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => api?.scrollTo(index)}
+                  className={`h-2 rounded-full transition-all ${
+                    index === current
+                      ? "w-8 bg-primary"
+                      : "w-2 bg-muted-foreground/30 hover:bg-muted-foreground/50"
+                  }`}
+                  aria-label={`Ir para imagem ${index + 1}`}
+                />
+              ))}
+            </div>
           </div>
 
           <div className="text-center mt-12 animate-fade-in">
