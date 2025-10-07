@@ -4,12 +4,17 @@ import mascotAcqua from "@/assets/mascot-acqua.jpg";
 import mascotTuca from "@/assets/mascot-tuca.jpg";
 import mascotLuma from "@/assets/mascot-luma.jpg";
 import mascotBibi from "@/assets/mascot-bibi.jpg";
+import mascotDelfim from "@/assets/mascot-delfim.jpg";
+import mascotEstrelinha from "@/assets/mascot-estrelinha.jpg";
+import mascotCavalo from "@/assets/mascot-cavalo.jpg";
+import mascotCaranguejo from "@/assets/mascot-caranguejo.jpg";
+import mascotBaleia from "@/assets/mascot-baleia.jpg";
 
 const Levels = () => {
   const levels = [
     {
-      mascot: mascotBibi,
-      mascotName: "Bibi",
+      mascot: mascotEstrelinha,
+      mascotName: "Estrelinha",
       name: "Baby Splash 1/2/3",
       age: "6-36 meses",
       color: "bg-pink-500",
@@ -44,8 +49,8 @@ const Levels = () => {
       skills: ["Crawl refinado", "Costas técnico", "Peito completo", "Borboleta inicial"],
     },
     {
-      mascot: mascotLuma,
-      mascotName: "Luma",
+      mascot: mascotDelfim,
+      mascotName: "Delfim",
       name: "Correnteza",
       age: "12-14 anos",
       color: "bg-blue-500",
@@ -53,8 +58,8 @@ const Levels = () => {
       skills: ["4 estilos completos", "Viradas e saídas", "Resistência física", "Velocidade"],
     },
     {
-      mascot: mascotAcqua,
-      mascotName: "Acqua",
+      mascot: mascotLuma,
+      mascotName: "Luma",
       name: "Ritmo & Técnica",
       age: "15-17 anos",
       color: "bg-indigo-500",
@@ -62,8 +67,8 @@ const Levels = () => {
       skills: ["Técnica avançada", "Treino intervalado", "Performance", "Condicionamento"],
     },
     {
-      mascot: mascotBibi,
-      mascotName: "Bibi",
+      mascot: mascotCaranguejo,
+      mascotName: "Caranguejo",
       name: "Adulto Iniciante",
       age: "18+ anos",
       color: "bg-purple-500",
@@ -71,8 +76,8 @@ const Levels = () => {
       skills: ["Perda do medo", "Flutuação", "Respiração", "Movimentos básicos"],
     },
     {
-      mascot: mascotTuca,
-      mascotName: "Tuca",
+      mascot: mascotCavalo,
+      mascotName: "Cavalo",
       name: "Adulto Intermediário",
       age: "18+ anos",
       color: "bg-purple-600",
@@ -80,8 +85,8 @@ const Levels = () => {
       skills: ["Crawl e costas", "Distância aumentada", "Resistência", "Técnica refinada"],
     },
     {
-      mascot: mascotLuma,
-      mascotName: "Luma",
+      mascot: mascotBaleia,
+      mascotName: "Baleia",
       name: "Adulto Avançado",
       age: "18+ anos",
       color: "bg-purple-700",

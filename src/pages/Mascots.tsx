@@ -1,12 +1,37 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Waves, Heart, Star, Sparkles } from "lucide-react";
+import { Waves, Heart, Star, Sparkles, Zap, Target, Award, Smile, Trophy } from "lucide-react";
 import mascotAcqua from "@/assets/mascot-acqua.jpg";
 import mascotTuca from "@/assets/mascot-tuca.jpg";
 import mascotLuma from "@/assets/mascot-luma.jpg";
 import mascotBibi from "@/assets/mascot-bibi.jpg";
+import mascotDelfim from "@/assets/mascot-delfim.jpg";
+import mascotEstrelinha from "@/assets/mascot-estrelinha.jpg";
+import mascotCavalo from "@/assets/mascot-cavalo.jpg";
+import mascotCaranguejo from "@/assets/mascot-caranguejo.jpg";
+import mascotBaleia from "@/assets/mascot-baleia.jpg";
 
 const mascots = [
+  {
+    name: "Estrelinha",
+    image: mascotEstrelinha,
+    color: "from-pink-400 to-orange-400",
+    icon: Star,
+    personality: "Carinhosa e Acolhedora",
+    description: "Estrelinha é a mascote mais carinhosa da turma! Ela acolhe os bebês e crianças pequenas com muito amor e ternura.",
+    characteristics: ["Acolhedora", "Doce", "Protetora"],
+    favoriteThing: "Brincar com os bebês na água",
+  },
+  {
+    name: "Bibi",
+    image: mascotBibi,
+    color: "from-orange-400 to-yellow-500",
+    icon: Sparkles,
+    personality: "Rápido e Corajoso",
+    description: "Bibi, o peixinho rápido, mostra que com coragem e prática, qualquer desafio na água pode ser superado!",
+    characteristics: ["Ágil", "Corajoso", "Motivador"],
+    favoriteThing: "Nadar borboleta em alta velocidade",
+  },
   {
     name: "Acqua",
     image: mascotAcqua,
@@ -28,24 +53,54 @@ const mascots = [
     favoriteThing: "Nadar crawl com perfeição",
   },
   {
+    name: "Delfim",
+    image: mascotDelfim,
+    color: "from-blue-500 to-cyan-600",
+    icon: Zap,
+    personality: "Veloz e Inteligente",
+    description: "Delfim é o golfinho mais rápido e inteligente! Ele inspira os alunos a nadarem com velocidade e técnica apurada.",
+    characteristics: ["Veloz", "Inteligente", "Atlético"],
+    favoriteThing: "Fazer viradas rápidas na piscina",
+  },
+  {
     name: "Luma",
     image: mascotLuma,
     color: "from-purple-400 to-pink-500",
-    icon: Star,
+    icon: Target,
     personality: "Criativa e Divertida",
     description: "Luma, o polvo criativo, usa seus oito tentáculos para demonstrar diferentes movimentos e tornar tudo mais divertido!",
     characteristics: ["Criativa", "Multitask", "Alegre"],
     favoriteThing: "Fazer movimentos sincronizados",
   },
   {
-    name: "Bibi",
-    image: mascotBibi,
-    color: "from-orange-400 to-yellow-500",
-    icon: Sparkles,
-    personality: "Rápido e Corajoso",
-    description: "Bibi, o peixinho rápido, mostra que com coragem e prática, qualquer desafio na água pode ser superado!",
-    characteristics: ["Ágil", "Corajoso", "Motivador"],
-    favoriteThing: "Nadar borboleta em alta velocidade",
+    name: "Caranguejo",
+    image: mascotCaranguejo,
+    color: "from-red-400 to-orange-500",
+    icon: Smile,
+    personality: "Determinado e Forte",
+    description: "Caranguejo é o mascote mais determinado! Com suas garras fortes, ele mostra que perseverança leva ao sucesso.",
+    characteristics: ["Determinado", "Forte", "Resistente"],
+    favoriteThing: "Treinos de resistência",
+  },
+  {
+    name: "Cavalo",
+    image: mascotCavalo,
+    color: "from-teal-400 to-cyan-500",
+    icon: Award,
+    personality: "Elegante e Técnico",
+    description: "Cavalo Marinho é o mascote mais elegante da turma! Ele demonstra movimentos com graça e perfeição técnica.",
+    characteristics: ["Elegante", "Técnico", "Gracioso"],
+    favoriteThing: "Movimentos técnicos refinados",
+  },
+  {
+    name: "Baleia",
+    image: mascotBaleia,
+    color: "from-blue-600 to-indigo-700",
+    icon: Trophy,
+    personality: "Poderosa e Experiente",
+    description: "Baleia é a mascote mais experiente! Com sua força e sabedoria, ela guia os nadadores avançados rumo à excelência.",
+    characteristics: ["Poderosa", "Experiente", "Sábia"],
+    favoriteThing: "Treinos de alta performance",
   },
 ];
 
@@ -73,7 +128,7 @@ const Mascots = () => {
               </span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed animate-fade-in">
-              Acqua, Tuca, Luma e Bibi são os amigos que acompanham todos os alunos durante sua jornada na natação!
+              Conheça os 9 amigos que acompanham todos os alunos durante sua jornada na natação!
             </p>
           </div>
         </div>
@@ -82,7 +137,7 @@ const Mascots = () => {
       {/* Mascots Grid */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {mascots.map((mascot, index) => (
               <Card
                 key={index}
