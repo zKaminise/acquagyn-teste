@@ -1,11 +1,15 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Baby, Fish, Waves as WavesIcon, Wind, Zap, Activity, User } from "lucide-react";
+import mascotAcqua from "@/assets/mascot-acqua.jpg";
+import mascotTuca from "@/assets/mascot-tuca.jpg";
+import mascotLuma from "@/assets/mascot-luma.jpg";
+import mascotBibi from "@/assets/mascot-bibi.jpg";
 
 const Levels = () => {
   const levels = [
     {
-      icon: Baby,
+      mascot: mascotBibi,
+      mascotName: "Bibi",
       name: "Baby Splash 1/2/3",
       age: "6-36 meses",
       color: "bg-pink-500",
@@ -13,7 +17,8 @@ const Levels = () => {
       skills: ["Familiarização com água", "Estímulos sensoriais", "Brincadeiras aquáticas", "Vínculo pais-bebê"],
     },
     {
-      icon: Fish,
+      mascot: mascotBibi,
+      mascotName: "Bibi",
       name: "Peixinhos 1/2",
       age: "3-5 anos",
       color: "bg-orange-500",
@@ -21,7 +26,8 @@ const Levels = () => {
       skills: ["Flutuação básica", "Mergulho inicial", "Movimentos coordenados", "Respiração aquática"],
     },
     {
-      icon: WavesIcon,
+      mascot: mascotAcqua,
+      mascotName: "Acqua",
       name: "Ondas 1/2",
       age: "6-8 anos",
       color: "bg-yellow-500",
@@ -29,7 +35,8 @@ const Levels = () => {
       skills: ["Crawl inicial", "Costas básico", "Propulsão de pernas", "Independência aquática"],
     },
     {
-      icon: Wind,
+      mascot: mascotTuca,
+      mascotName: "Tuca",
       name: "Marés 1/2/3",
       age: "9-11 anos",
       color: "bg-green-500",
@@ -37,7 +44,8 @@ const Levels = () => {
       skills: ["Crawl refinado", "Costas técnico", "Peito completo", "Borboleta inicial"],
     },
     {
-      icon: Zap,
+      mascot: mascotLuma,
+      mascotName: "Luma",
       name: "Correnteza",
       age: "12-14 anos",
       color: "bg-blue-500",
@@ -45,7 +53,8 @@ const Levels = () => {
       skills: ["4 estilos completos", "Viradas e saídas", "Resistência física", "Velocidade"],
     },
     {
-      icon: Activity,
+      mascot: mascotAcqua,
+      mascotName: "Acqua",
       name: "Ritmo & Técnica",
       age: "15-17 anos",
       color: "bg-indigo-500",
@@ -53,7 +62,8 @@ const Levels = () => {
       skills: ["Técnica avançada", "Treino intervalado", "Performance", "Condicionamento"],
     },
     {
-      icon: User,
+      mascot: mascotBibi,
+      mascotName: "Bibi",
       name: "Adulto Iniciante",
       age: "18+ anos",
       color: "bg-purple-500",
@@ -61,7 +71,8 @@ const Levels = () => {
       skills: ["Perda do medo", "Flutuação", "Respiração", "Movimentos básicos"],
     },
     {
-      icon: User,
+      mascot: mascotTuca,
+      mascotName: "Tuca",
       name: "Adulto Intermediário",
       age: "18+ anos",
       color: "bg-purple-600",
@@ -69,7 +80,8 @@ const Levels = () => {
       skills: ["Crawl e costas", "Distância aumentada", "Resistência", "Técnica refinada"],
     },
     {
-      icon: User,
+      mascot: mascotLuma,
+      mascotName: "Luma",
       name: "Adulto Avançado",
       age: "18+ anos",
       color: "bg-purple-700",
@@ -108,7 +120,6 @@ const Levels = () => {
         <div className="container mx-auto px-4">
           <div className="space-y-8">
             {levels.map((level, index) => {
-              const Icon = level.icon;
               const isEven = index % 2 === 0;
               
               return (
@@ -125,10 +136,20 @@ const Levels = () => {
                   <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                     {/* Header */}
                     <div className="lg:col-span-1 flex flex-col items-center lg:items-start text-center lg:text-left">
-                      <div className={`w-20 h-20 rounded-2xl ${level.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-smooth shadow-lg`}>
-                        <Icon className="w-10 h-10 text-white" />
+                      <div className="relative w-24 h-24 mb-4 group-hover:scale-110 transition-smooth">
+                        <img
+                          src={level.mascot}
+                          alt={`Mascote ${level.mascotName}`}
+                          className="w-full h-full object-contain drop-shadow-lg"
+                        />
+                        <Badge 
+                          variant="secondary" 
+                          className="absolute -bottom-2 left-1/2 -translate-x-1/2 text-xs px-2 py-0.5"
+                        >
+                          {level.mascotName}
+                        </Badge>
                       </div>
-                      <h3 className="text-2xl font-bold text-foreground mb-2">
+                      <h3 className="text-2xl font-bold text-foreground mb-2 mt-2">
                         {level.name}
                       </h3>
                       <Badge variant="secondary" className="text-sm mb-4">
