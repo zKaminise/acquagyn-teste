@@ -1,12 +1,7 @@
 import { Waves, Facebook, Instagram, Youtube } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
 
   return (
     <footer className="bg-foreground text-background py-12">
@@ -52,36 +47,36 @@ const Footer = () => {
             <h3 className="text-lg font-bold mb-4">Links Rápidos</h3>
             <ul className="space-y-2">
               <li>
-                <button
-                  onClick={() => scrollToSection("sobre")}
+                <Link
+                  to="/sobre"
                   className="text-background/80 hover:text-primary transition-smooth"
                 >
                   Sobre Nós
-                </button>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection("metodologia")}
+                <Link
+                  to="/metodologia"
                   className="text-background/80 hover:text-primary transition-smooth"
                 >
                   Metodologia
-                </button>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection("niveis")}
+                <Link
+                  to="/niveis"
                   className="text-background/80 hover:text-primary transition-smooth"
                 >
                   Níveis de Ensino
-                </button>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection("diferenciais")}
+                <Link
+                  to="/contato"
                   className="text-background/80 hover:text-primary transition-smooth"
                 >
-                  Diferenciais
-                </button>
+                  Contato
+                </Link>
               </li>
             </ul>
           </div>
@@ -91,12 +86,12 @@ const Footer = () => {
             <h3 className="text-lg font-bold mb-4">Contato</h3>
             <ul className="space-y-2 text-background/80">
               <li>
-                <a
-                  href="#contato"
+                <Link
+                  to="/contato"
                   className="hover:text-primary transition-smooth"
                 >
                   Fale Conosco
-                </a>
+                </Link>
               </li>
               <li>
                 <a

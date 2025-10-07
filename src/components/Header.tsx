@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Waves } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,13 +16,11 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-      setIsMobileMenuOpen(false);
-    }
-  };
+  useEffect(() => {
+    setIsMobileMenuOpen(false);
+  }, [location]);
+
+  const isActive = (path: string) => location.pathname === path;
 
   return (
     <header
@@ -33,49 +33,67 @@ const Header = () => {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <button
-            onClick={() => scrollToSection("hero")}
+          <Link
+            to="/"
             className="flex items-center gap-2 hover:opacity-80 transition-smooth"
           >
-            <Waves className="w-8 h-8 text-primary" />
+            <Waves className="w-8 h-8 text-primary animate-wave" />
             <span className="text-2xl font-bold gradient-ocean bg-clip-text text-transparent">
               Acquagyn
             </span>
-          </button>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-6">
-            <button
-              onClick={() => scrollToSection("sobre")}
-              className="text-foreground hover:text-primary transition-smooth font-medium"
+            <Link
+              to="/"
+              className={`text-foreground hover:text-primary transition-smooth font-medium relative ${
+                isActive("/") ? "text-primary font-semibold" : ""
+              }`}
+            >
+              Home
+              {isActive("/") && (
+                <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-primary" />
+              )}
+            </Link>
+            <Link
+              to="/sobre"
+              className={`text-foreground hover:text-primary transition-smooth font-medium relative ${
+                isActive("/sobre") ? "text-primary font-semibold" : ""
+              }`}
             >
               Sobre
-            </button>
-            <button
-              onClick={() => scrollToSection("metodologia")}
-              className="text-foreground hover:text-primary transition-smooth font-medium"
+              {isActive("/sobre") && (
+                <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-primary" />
+              )}
+            </Link>
+            <Link
+              to="/metodologia"
+              className={`text-foreground hover:text-primary transition-smooth font-medium relative ${
+                isActive("/metodologia") ? "text-primary font-semibold" : ""
+              }`}
             >
               Metodologia
-            </button>
-            <button
-              onClick={() => scrollToSection("niveis")}
-              className="text-foreground hover:text-primary transition-smooth font-medium"
+              {isActive("/metodologia") && (
+                <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-primary" />
+              )}
+            </Link>
+            <Link
+              to="/niveis"
+              className={`text-foreground hover:text-primary transition-smooth font-medium relative ${
+                isActive("/niveis") ? "text-primary font-semibold" : ""
+              }`}
             >
               Níveis
-            </button>
-            <button
-              onClick={() => scrollToSection("diferenciais")}
-              className="text-foreground hover:text-primary transition-smooth font-medium"
-            >
-              Diferenciais
-            </button>
-            <Button
-              variant="hero"
-              size="lg"
-              onClick={() => scrollToSection("contato")}
-            >
-              Fale Conosco
-            </Button>
+              {isActive("/niveis") && (
+                <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-primary" />
+              )}
+            </Link>
+            <Link to="/contato">
+              <Button variant="hero" size="lg">
+                Fale Conosco
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -94,38 +112,43 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
           <div className="md:hidden mt-4 pb-4 space-y-3 animate-fade-in">
-            <button
-              onClick={() => scrollToSection("sobre")}
-              className="block w-full text-left py-2 text-foreground hover:text-primary transition-smooth font-medium"
+            <Link
+              to="/"
+              className={`block w-full text-left py-2 transition-smooth font-medium ${
+                isActive("/") ? "text-primary font-semibold" : "text-foreground hover:text-primary"
+              }`}
+            >
+              Home
+            </Link>
+            <Link
+              to="/sobre"
+              className={`block w-full text-left py-2 transition-smooth font-medium ${
+                isActive("/sobre") ? "text-primary font-semibold" : "text-foreground hover:text-primary"
+              }`}
             >
               Sobre
-            </button>
-            <button
-              onClick={() => scrollToSection("metodologia")}
-              className="block w-full text-left py-2 text-foreground hover:text-primary transition-smooth font-medium"
+            </Link>
+            <Link
+              to="/metodologia"
+              className={`block w-full text-left py-2 transition-smooth font-medium ${
+                isActive("/metodologia") ? "text-primary font-semibold" : "text-foreground hover:text-primary"
+              }`}
             >
               Metodologia
-            </button>
-            <button
-              onClick={() => scrollToSection("niveis")}
-              className="block w-full text-left py-2 text-foreground hover:text-primary transition-smooth font-medium"
+            </Link>
+            <Link
+              to="/niveis"
+              className={`block w-full text-left py-2 transition-smooth font-medium ${
+                isActive("/niveis") ? "text-primary font-semibold" : "text-foreground hover:text-primary"
+              }`}
             >
               Níveis
-            </button>
-            <button
-              onClick={() => scrollToSection("diferenciais")}
-              className="block w-full text-left py-2 text-foreground hover:text-primary transition-smooth font-medium"
-            >
-              Diferenciais
-            </button>
-            <Button
-              variant="hero"
-              size="lg"
-              className="w-full"
-              onClick={() => scrollToSection("contato")}
-            >
-              Fale Conosco
-            </Button>
+            </Link>
+            <Link to="/contato" className="block">
+              <Button variant="hero" size="lg" className="w-full">
+                Fale Conosco
+              </Button>
+            </Link>
           </div>
         )}
       </nav>
