@@ -79,6 +79,17 @@ const Header = () => {
               )}
             </Link>
             <Link
+              to="/servicos"
+              className={`text-foreground hover:text-primary transition-smooth font-medium relative ${
+                isActive("/servicos") ? "text-primary font-semibold" : ""
+              }`}
+            >
+              Serviços
+              {isActive("/servicos") && (
+                <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-primary" />
+              )}
+            </Link>
+            <Link
               to="/niveis"
               className={`text-foreground hover:text-primary transition-smooth font-medium relative ${
                 isActive("/niveis") ? "text-primary font-semibold" : ""
@@ -146,6 +157,14 @@ const Header = () => {
               }`}
             >
               Metodologia
+            </Link>
+            <Link
+              to="/servicos"
+              className={`block w-full text-left py-2 transition-smooth font-medium ${
+                isActive("/servicos") ? "text-primary font-semibold" : "text-foreground hover:text-primary"
+              }`}
+            >
+              Serviços
             </Link>
             <Link
               to="/niveis"

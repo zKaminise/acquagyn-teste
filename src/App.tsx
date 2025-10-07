@@ -12,6 +12,7 @@ import Methodology from "./pages/Methodology";
 import Levels from "./pages/Levels";
 import Mascots from "./pages/Mascots";
 import Contact from "./pages/Contact";
+import Services from "./pages/Services";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,6 +33,7 @@ const App = () => (
               <Route path="/metodologia" element={<Methodology />} />
               <Route path="/niveis" element={<Levels />} />
               <Route path="/mascotes" element={<Mascots />} />
+              <Route path="/servicos" element={<Services />} />
               <Route path="/contato" element={<Contact />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
