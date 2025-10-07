@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Methodology from "./pages/Methodology";
 import Levels from "./pages/Levels";
+import Mascots from "./pages/Mascots";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
@@ -28,6 +29,7 @@ const App = () => (
               <Route path="/sobre" element={<About />} />
               <Route path="/metodologia" element={<Methodology />} />
               <Route path="/niveis" element={<Levels />} />
+              <Route path="/mascotes" element={<Mascots />} />
               <Route path="/contato" element={<Contact />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />

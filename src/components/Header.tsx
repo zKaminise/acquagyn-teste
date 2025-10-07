@@ -89,6 +89,17 @@ const Header = () => {
                 <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-primary" />
               )}
             </Link>
+            <Link
+              to="/mascotes"
+              className={`text-foreground hover:text-primary transition-smooth font-medium relative ${
+                isActive("/mascotes") ? "text-primary font-semibold" : ""
+              }`}
+            >
+              Mascotes
+              {isActive("/mascotes") && (
+                <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-primary" />
+              )}
+            </Link>
             <Link to="/contato">
               <Button variant="hero" size="lg">
                 Fale Conosco
@@ -143,6 +154,14 @@ const Header = () => {
               }`}
             >
               Níveis
+            </Link>
+            <Link
+              to="/mascotes"
+              className={`block w-full text-left py-2 transition-smooth font-medium ${
+                isActive("/mascotes") ? "text-primary font-semibold" : "text-foreground hover:text-primary"
+              }`}
+            >
+              Mascotes
             </Link>
             <Link to="/contato" className="block">
               <Button variant="hero" size="lg" className="w-full">
