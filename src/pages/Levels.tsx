@@ -14,7 +14,7 @@ const Levels = () => {
   const levels = [
     {
       mascot: mascotEstrelinha,
-      mascotName: "Estrelinha",
+      mascotName: "Stellinha",
       name: "Baby Splash 1/2/3",
       age: "6-36 meses",
       color: "bg-pink-500",
@@ -32,7 +32,7 @@ const Levels = () => {
     },
     {
       mascot: mascotAcqua,
-      mascotName: "Acqua",
+      mascotName: "Acquinha",
       name: "Ondas 1/2",
       age: "6-8 anos",
       color: "bg-yellow-500",
@@ -41,7 +41,7 @@ const Levels = () => {
     },
     {
       mascot: mascotTuca,
-      mascotName: "Tuca",
+      mascotName: "Tuquinha",
       name: "Marés 1/2/3",
       age: "9-11 anos",
       color: "bg-green-500",
@@ -50,7 +50,7 @@ const Levels = () => {
     },
     {
       mascot: mascotDelfim,
-      mascotName: "Delfim",
+      mascotName: "Delfi",
       name: "Correnteza",
       age: "12-14 anos",
       color: "bg-blue-500",
@@ -59,7 +59,7 @@ const Levels = () => {
     },
     {
       mascot: mascotLuma,
-      mascotName: "Luma",
+      mascotName: "Luminha",
       name: "Ritmo & Técnica",
       age: "15-17 anos",
       color: "bg-indigo-500",
@@ -68,7 +68,7 @@ const Levels = () => {
     },
     {
       mascot: mascotCaranguejo,
-      mascotName: "Caranguejo",
+      mascotName: "Pitoco",
       name: "Adulto Iniciante",
       age: "18+ anos",
       color: "bg-purple-500",
@@ -77,7 +77,7 @@ const Levels = () => {
     },
     {
       mascot: mascotCavalo,
-      mascotName: "Cavalo",
+      mascotName: "Hipinho",
       name: "Adulto Intermediário",
       age: "18+ anos",
       color: "bg-purple-600",
@@ -86,7 +86,7 @@ const Levels = () => {
     },
     {
       mascot: mascotBaleia,
-      mascotName: "Baleia",
+      mascotName: "Belinha",
       name: "Adulto Avançado",
       age: "18+ anos",
       color: "bg-purple-700",
