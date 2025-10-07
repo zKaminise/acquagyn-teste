@@ -72,7 +72,7 @@ const Methodology = () => {
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in">
               Metodologia{" "}
-              <span className="text-primary">
+              <span className="text-gradient-animated">
                 Acquagyn
               </span>
             </h1>
@@ -90,7 +90,7 @@ const Methodology = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
               Os 4 Pilares da{" "}
-              <span className="text-primary">
+              <span className="text-gradient-animated">
                 Nossa Metodologia
               </span>
             </h2>
@@ -127,7 +127,7 @@ const Methodology = () => {
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
               Estrutura de{" "}
-              <span className="text-primary">
+              <span className="text-gradient-animated">
                 Progressão
               </span>
             </h2>
@@ -185,7 +185,7 @@ const Methodology = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
               Diferenciais da{" "}
-              <span className="text-primary">
+              <span className="text-gradient-animated">
                 Metodologia
               </span>
             </h2>

@@ -123,7 +123,7 @@ const Mascots = () => {
             
             <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in">
               Nossos{" "}
-              <span className="text-primary">
+              <span className="text-gradient-animated">
                 Mascotes
               </span>
             </h1>
@@ -200,7 +200,7 @@ const Mascots = () => {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-bold text-center mb-12 animate-fade-in">
               Curiosidades sobre os{" "}
-              <span className="text-primary">Mascotes</span>
+              <span className="text-gradient-animated">Mascotes</span>
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

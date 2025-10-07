@@ -47,7 +47,7 @@ const Home = () => {
             </Badge>
             
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight animate-fade-in">
-              <span className="text-primary">
+              <span className="text-gradient-animated">
                 Acquagyn
               </span>
               <br />
@@ -136,7 +136,7 @@ const Home = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
               Por que escolher a{" "}
-              <span className="text-primary">
+              <span className="text-gradient-animated">
                 Acquagyn?
               </span>
             </h2>
@@ -183,7 +183,7 @@ const Home = () => {
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
               Nossas{" "}
-              <span className="text-primary">
+              <span className="text-gradient-animated">
                 Instalações
               </span>
             </h2>

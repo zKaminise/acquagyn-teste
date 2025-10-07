@@ -120,4 +120,19 @@ All colors MUST be HSL.
   .transition-smooth {
     transition: var(--transition-smooth);
   }
+  
+  .text-gradient-animated {
+    background: linear-gradient(
+      90deg,
+      hsl(199, 89%, 48%),
+      hsl(188, 78%, 41%),
+      hsl(199, 95%, 74%),
+      hsl(199, 89%, 48%)
+    );
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-shift 4s ease infinite;
+  }
 }

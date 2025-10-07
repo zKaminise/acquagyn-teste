@@ -15,7 +15,7 @@ const Services = () => {
               Nossos Serviços
             </Badge>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Serviços da Acquagyn
+              Serviços da <span className="text-gradient-animated">Acquagyn</span>
             </h1>
             <p className="text-xl text-muted-foreground">
               Descubra nossas modalidades e escolha a melhor opção para você e sua família

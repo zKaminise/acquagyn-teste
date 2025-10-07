@@ -55,7 +55,7 @@ const About = () => {
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in">
               Sobre a{" "}
-              <span className="text-primary">
+              <span className="text-gradient-animated">
                 Acquagyn
               </span>
             </h1>
@@ -75,7 +75,7 @@ const About = () => {
             <div className="animate-fade-in">
               <h2 className="text-4xl font-bold mb-6">
                 Mais de 30 Anos de{" "}
-                <span className="text-primary">História</span>
+                <span className="text-gradient-animated">História</span>
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
@@ -124,7 +124,7 @@ const About = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
               Nossos{" "}
-              <span className="text-primary">
+              <span className="text-gradient-animated">
                 Diferenciais
               </span>
             </h2>
@@ -166,7 +166,7 @@ const About = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
               Nossos{" "}
-              <span className="text-primary">
+              <span className="text-gradient-animated">
                 Valores
               </span>
             </h2>
