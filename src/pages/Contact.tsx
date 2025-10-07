@@ -35,7 +35,7 @@ const Contact = () => {
             {/* Contact Info */}
             <Card className="p-8 space-y-6 shadow-card hover:shadow-hover transition-smooth animate-fade-in">
               <div>
-                <h2 className="text-3xl font-bold mb-6 text-foreground">
+                <h2 className="text-2xl md:text-3xl font-bold mb-6 text-foreground">
                   Informações de Contato
                 </h2>
               </div>
@@ -147,7 +147,7 @@ const Contact = () => {
         <div className="container mx-auto px-4">
           <Card className="max-w-6xl mx-auto p-12 text-center shadow-hover animate-fade-in">
             <MapPin className="w-16 h-16 text-primary mx-auto mb-6" />
-            <h2 className="text-3xl font-bold mb-4">Venha nos Visitar</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">Venha nos Visitar</h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
               Nossa unidade está preparada para recebê-lo. Agende uma visita e conheça 
               nossa estrutura completa com piscinas aquecidas e ambiente seguro.

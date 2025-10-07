@@ -194,7 +194,7 @@ const Levels = () => {
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <Card className="max-w-4xl mx-auto p-12 text-center shadow-hover animate-fade-in bg-gradient-to-br from-card to-primary/5">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Encontre o Nível Ideal Para Você
             </h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">

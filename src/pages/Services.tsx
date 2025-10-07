@@ -14,7 +14,7 @@ const Services = () => {
             <Badge variant="default" className="mb-4">
               Nossos Serviços
             </Badge>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6">
               Serviços da <span className="text-gradient-animated">Acquagyn</span>
             </h1>
             <p className="text-xl text-muted-foreground">
@@ -194,7 +194,7 @@ const Services = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center animate-fade-in">
             <Phone className="w-16 h-16 mx-auto mb-6" />
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Quer saber mais sobre horários e valores?
             </h2>
             <p className="text-xl text-white/90 mb-8">

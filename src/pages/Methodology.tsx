@@ -153,7 +153,7 @@ const Methodology = () => {
         <div className="container mx-auto px-4">
           <Card className="max-w-4xl mx-auto p-12 text-center shadow-hover animate-fade-in bg-gradient-to-br from-card to-primary/5">
             <Award className="w-16 h-16 text-primary mx-auto mb-6" />
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Desenvolvimento Global do Aluno
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">

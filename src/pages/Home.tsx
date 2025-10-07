@@ -46,7 +46,7 @@ const Home = () => {
               Desde 1994
             </Badge>
             
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight animate-fade-in">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight animate-fade-in">
               <span className="text-gradient-animated">
                 Acquagyn
               </span>
@@ -264,7 +264,7 @@ const Home = () => {
             <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/10 rounded-full blur-3xl animate-ripple pointer-events-none -z-0" style={{ animationDelay: "1s" }} />
             
             <div className="relative z-10">
-              <h2 className="text-3xl md:text-5xl font-bold mb-6 animate-fade-in">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">
                 Comece Sua Jornada na Natação Hoje!
               </h2>
               <p className="text-xl mb-8 text-white/90 max-w-2xl mx-auto animate-fade-in">
