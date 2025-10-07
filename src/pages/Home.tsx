@@ -1,9 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
-import { Waves, Award, Users, ArrowRight, Shield, Target, Sparkles, TrendingUp } from "lucide-react";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { Waves, Award, Users, ArrowRight, Shield, Target, Sparkles, TrendingUp, Building2 } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroPool from "@/assets/hero-pool.jpg";
+import facilityPoolMain from "@/assets/facility-pool-main.jpg";
+import facilityPoolKids from "@/assets/facility-pool-kids.jpg";
+import facilityLockers from "@/assets/facility-lockers.jpg";
+import facilityReception from "@/assets/facility-reception.jpg";
 
 const Home = () => {
   return (
@@ -150,6 +155,69 @@ const Home = () => {
             <Link to="/sobre">
               <Button variant="default" size="lg" className="group">
                 Saiba Mais Sobre Nós
+                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-smooth" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Facilities Gallery Section */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
+              Nossas{" "}
+              <span className="text-primary">
+                Instalações
+              </span>
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto animate-fade-in">
+              Conheça nosso espaço moderno e seguro, projetado para sua melhor experiência
+            </p>
+          </div>
+
+          <div className="max-w-5xl mx-auto">
+            <Carousel className="w-full">
+              <CarouselContent>
+                {[
+                  { image: facilityPoolMain, title: "Piscina Principal", desc: "Piscina aquecida com raias profissionais e iluminação ideal" },
+                  { image: facilityPoolKids, title: "Área Infantil", desc: "Espaço especial para crianças com água aquecida e segurança total" },
+                  { image: facilityLockers, title: "Vestiários", desc: "Vestiários modernos e higienizados para seu conforto" },
+                  { image: facilityReception, title: "Recepção", desc: "Ambiente acolhedor com equipe pronta para atendê-lo" },
+                ].map((facility, index) => (
+                  <CarouselItem key={index}>
+                    <Card className="overflow-hidden border-0 shadow-hover">
+                      <div className="relative aspect-video">
+                        <img
+                          src={facility.image}
+                          alt={facility.title}
+                          className="w-full h-full object-cover"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
+                        <div className="absolute bottom-0 left-0 right-0 p-8 text-center">
+                          <h3 className="text-2xl md:text-3xl font-bold mb-2 text-foreground">
+                            {facility.title}
+                          </h3>
+                          <p className="text-muted-foreground text-lg">
+                            {facility.desc}
+                          </p>
+                        </div>
+                      </div>
+                    </Card>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="left-4" />
+              <CarouselNext className="right-4" />
+            </Carousel>
+          </div>
+
+          <div className="text-center mt-12 animate-fade-in">
+            <Link to="/contato">
+              <Button variant="default" size="lg" className="group">
+                <Building2 className="w-5 h-5 mr-2" />
+                Agende uma Visita
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-smooth" />
               </Button>
             </Link>
