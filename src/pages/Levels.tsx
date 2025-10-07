@@ -91,7 +91,7 @@ const Levels = () => {
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in">
               Níveis de{" "}
-              <span className="gradient-ocean bg-clip-text text-transparent">
+              <span className="text-primary">
                 Ensino
               </span>
             </h1>

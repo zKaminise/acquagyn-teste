@@ -55,7 +55,7 @@ const About = () => {
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in">
               Sobre a{" "}
-              <span className="gradient-ocean bg-clip-text text-transparent">
+              <span className="text-primary">
                 Acquagyn
               </span>
             </h1>
@@ -124,7 +124,7 @@ const About = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
               Nossos{" "}
-              <span className="gradient-ocean bg-clip-text text-transparent">
+              <span className="text-primary">
                 Diferenciais
               </span>
             </h2>
@@ -166,7 +166,7 @@ const About = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
               Nossos{" "}
-              <span className="gradient-ocean bg-clip-text text-transparent">
+              <span className="text-primary">
                 Valores
               </span>
             </h2>

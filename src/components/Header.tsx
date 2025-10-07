@@ -38,7 +38,7 @@ const Header = () => {
             className="flex items-center gap-2 hover:opacity-80 transition-smooth"
           >
             <Waves className="w-8 h-8 text-primary animate-wave" />
-            <span className="text-2xl font-bold gradient-ocean bg-clip-text text-transparent">
+            <span className="text-2xl font-bold text-primary">
               Acquagyn
             </span>
           </Link>
