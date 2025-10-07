@@ -161,8 +161,8 @@ const Home = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="relative rounded-2xl gradient-ocean p-12 md:p-16 text-center text-white overflow-hidden shadow-hover">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl animate-ripple" />
-            <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/10 rounded-full blur-3xl animate-ripple" style={{ animationDelay: "1s" }} />
+            <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl animate-ripple pointer-events-none -z-0" />
+            <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/10 rounded-full blur-3xl animate-ripple pointer-events-none -z-0" style={{ animationDelay: "1s" }} />
             
             <div className="relative z-10">
               <h2 className="text-3xl md:text-5xl font-bold mb-6 animate-fade-in">

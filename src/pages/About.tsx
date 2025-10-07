@@ -46,7 +46,7 @@ const About = () => {
     <div className="min-h-screen">
       {/* Hero */}
       <section className="relative py-20 bg-gradient-to-b from-primary/5 to-background overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0 opacity-5 pointer-events-none -z-10">
           <div className="absolute top-20 left-10 w-72 h-72 bg-primary rounded-full blur-3xl animate-ripple" />
           <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary rounded-full blur-3xl animate-ripple" style={{ animationDelay: "1s" }} />
         </div>
