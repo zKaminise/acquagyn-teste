@@ -59,7 +59,12 @@ const Services = () => {
                     <span className="text-sm">Planos mensais acessíveis</span>
                   </div>
                 </div>
-                <div className="pt-4">
+                <div className="pt-4 space-y-3">
+                  <Link to="/contato">
+                    <Button variant="hero" className="w-full">
+                      Agende sua Aula Experimental
+                    </Button>
+                  </Link>
                   <Link to="/niveis">
                     <Button variant="outline" className="w-full">
                       Ver Níveis de Natação
@@ -99,6 +104,13 @@ const Services = () => {
                     <Activity className="w-5 h-5 text-primary" />
                     <span className="text-sm">Baixo impacto, alto benefício</span>
                   </div>
+                </div>
+                <div className="pt-4">
+                  <Link to="/contato">
+                    <Button variant="hero" className="w-full">
+                      Agende sua Aula Experimental
+                    </Button>
+                  </Link>
                 </div>
               </CardContent>
             </Card>
@@ -182,6 +194,14 @@ const Services = () => {
                       </p>
                     </div>
                   </div>
+                </div>
+
+                <div className="mt-6 pt-6 border-t border-border">
+                  <Link to="/contato">
+                    <Button variant="hero" size="lg" className="w-full">
+                      Quero Agendar uma Aula Experimental no SESI
+                    </Button>
+                  </Link>
                 </div>
               </CardContent>
             </Card>
