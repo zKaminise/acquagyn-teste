@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Shield, Target, Award, Sparkles, BookOpen, ClipboardCheck, Trophy, Flame, CheckCircle2 } from "lucide-react";
-import methodologyDiagram from "@/assets/methodology-diagram.jpg";
+import methodologyDiagram from "@/assets/methodology-diagram-new.jpg";
 
 const Methodology = () => {
   const pillars = [
@@ -12,7 +12,7 @@ const Methodology = () => {
     {
       icon: Target,
       title: "Progressão Estruturada",
-      description: "Metodologia com 9 níveis, do bebê ao adulto, com competências mensuráveis.",
+      description: "Metodologia com 8 níveis, do bebê ao adolescente, com competências mensuráveis.",
     },
     {
       icon: Award,
@@ -132,7 +132,7 @@ const Methodology = () => {
               </span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto animate-fade-in">
-              Do bebê ao adulto avançado, cada nível foi cuidadosamente desenvolvido 
+              Do bebê ao adolescente avançado, cada nível foi cuidadosamente desenvolvido 
               para garantir progressão segura e eficiente
             </p>
           </div>
@@ -140,7 +140,7 @@ const Methodology = () => {
           <div className="relative rounded-2xl overflow-hidden shadow-hover animate-fade-in hover:scale-[1.02] transition-smooth">
             <img
               src={methodologyDiagram}
-              alt="Diagrama da metodologia Acquagyn com 9 níveis de progressão"
+              alt="Estrutura de progressão da natação Acquagyn com 8 níveis coloridos"
               className="w-full h-auto"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent pointer-events-none" />

@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Waves, Heart, Star, Sparkles, Zap, Target, Award, Smile, Trophy } from "lucide-react";
+import { Waves, Heart, Star, Sparkles, Zap, Target, Award, Smile } from "lucide-react";
 import mascotAcqua from "@/assets/mascot-acqua.jpg";
 import mascotTuca from "@/assets/mascot-tuca.jpg";
 import mascotLuma from "@/assets/mascot-luma.jpg";
@@ -9,7 +9,6 @@ import mascotDelfim from "@/assets/mascot-delfim.jpg";
 import mascotEstrelinha from "@/assets/mascot-estrelinha.jpg";
 import mascotCavalo from "@/assets/mascot-cavalo.jpg";
 import mascotCaranguejo from "@/assets/mascot-caranguejo.jpg";
-import mascotBaleia from "@/assets/mascot-baleia.jpg";
 
 const mascots = [
   {
@@ -92,16 +91,6 @@ const mascots = [
     characteristics: ["Elegante", "Técnico", "Gracioso"],
     favoriteThing: "Movimentos técnicos refinados",
   },
-  {
-    name: "Belinha",
-    image: mascotBaleia,
-    color: "from-blue-600 to-indigo-700",
-    icon: Trophy,
-    personality: "Poderosa e Experiente",
-    description: "Belinha é a mascote mais experiente! Com sua força e sabedoria, ela guia os nadadores avançados rumo à excelência.",
-    characteristics: ["Poderosa", "Experiente", "Sábia"],
-    favoriteThing: "Treinos de alta performance",
-  },
 ];
 
 const Mascots = () => {
@@ -128,7 +117,7 @@ const Mascots = () => {
               </span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed animate-fade-in">
-              Conheça os 9 amigos que acompanham todos os alunos durante sua jornada na natação!
+              Conheça os 8 amigos que acompanham todos os alunos durante sua jornada na natação!
             </p>
           </div>
         </div>

@@ -193,7 +193,7 @@ const Levels = () => {
             </p>
             <a
               href="/contato"
-              className="inline-block bg-primary text-primary-foreground font-bold px-8 py-4 rounded-lg hover:bg-primary/90 hover:scale-105 hover:-translate-y-1 transition-all duration-300 shadow-card hover:shadow-hover animate-pulse hover:animate-none"
+              className="inline-block bg-primary text-primary-foreground font-bold px-8 py-4 rounded-lg hover:bg-primary/90 hover:scale-105 hover:-translate-y-1 transition-all duration-300 shadow-card hover:shadow-hover"
             >
               Agende Sua Avaliação
             </a>
