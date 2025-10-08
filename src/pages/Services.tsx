@@ -289,7 +289,7 @@ const Services = () => {
               com todas as informações sobre nossos serviços.
             </p>
             <Link to="/contato">
-              <Button size="lg" variant="secondary" className="shadow-hover">
+              <Button size="lg" className="bg-white text-primary hover:bg-white/90 font-bold shadow-hover">
                 Fale Conosco
               </Button>
             </Link>

@@ -276,11 +276,11 @@ const Home = () => {
                     Agendar Aula Experimental
                   </Button>
                 </Link>
-                <Link to="/niveis">
-                  <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/10 text-lg">
-                    Ver Níveis de Ensino
-                  </Button>
-                </Link>
+              <Link to="/niveis">
+                <Button size="lg" className="bg-white text-primary hover:bg-white/90 font-semibold text-lg">
+                  Ver Níveis de Ensino
+                </Button>
+              </Link>
               </div>
             </div>
           </div>

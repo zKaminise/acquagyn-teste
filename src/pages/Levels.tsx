@@ -8,90 +8,80 @@ import mascotDelfim from "@/assets/mascot-delfim.jpg";
 import mascotEstrelinha from "@/assets/mascot-estrelinha.jpg";
 import mascotCavalo from "@/assets/mascot-cavalo.jpg";
 import mascotCaranguejo from "@/assets/mascot-caranguejo.jpg";
-import mascotBaleia from "@/assets/mascot-baleia.jpg";
 
 const Levels = () => {
   const levels = [
     {
       mascot: mascotEstrelinha,
       mascotName: "Stellinha",
-      name: "Baby Splash 1/2/3",
-      age: "6-36 meses",
+      name: "Baby 1",
+      age: "6-12 meses",
       color: "bg-pink-500",
-      description: "Adaptação aquática através de estímulos sensoriais e vínculo com os pais",
+      description: "Primeiro contato com o ambiente aquático através de estímulos sensoriais",
       skills: ["Familiarização com água", "Estímulos sensoriais", "Brincadeiras aquáticas", "Vínculo pais-bebê"],
     },
     {
       mascot: mascotBibi,
       mascotName: "Bibi",
-      name: "Peixinhos 1/2",
-      age: "3-5 anos",
+      name: "Baby 2",
+      age: "1-2 anos",
       color: "bg-orange-500",
-      description: "Familiarização com o meio aquático através de brincadeiras e atividades lúdicas",
-      skills: ["Flutuação básica", "Mergulho inicial", "Movimentos coordenados", "Respiração aquática"],
+      description: "Desenvolvimento da confiança aquática com atividades lúdicas",
+      skills: ["Imersão básica", "Coordenação inicial", "Movimentos exploratórios", "Autonomia crescente"],
     },
     {
       mascot: mascotAcqua,
       mascotName: "Acquinha",
-      name: "Ondas 1/2",
-      age: "6-8 anos",
+      name: "Baby 3",
+      age: "2-3 anos",
       color: "bg-yellow-500",
-      description: "Desenvolvimento de movimentos básicos e início do aprendizado técnico",
-      skills: ["Crawl inicial", "Costas básico", "Propulsão de pernas", "Independência aquática"],
+      description: "Preparação para independência aquática através de jogos e desafios",
+      skills: ["Flutuação assistida", "Propulsão inicial", "Mergulhos simples", "Primeiros deslocamentos"],
     },
     {
       mascot: mascotTuca,
       mascotName: "Tuquinha",
-      name: "Marés 1/2/3",
-      age: "9-11 anos",
+      name: "Adaptação",
+      age: "3-5 anos",
       color: "bg-green-500",
-      description: "Aprimoramento técnico dos quatro estilos de natação",
-      skills: ["Crawl refinado", "Costas técnico", "Peito completo", "Borboleta inicial"],
+      description: "Adaptação ao meio aquático com foco em segurança e confiança",
+      skills: ["Flutuação independente", "Respiração básica", "Propulsão de pernas", "Deslocamentos curtos"],
     },
     {
       mascot: mascotDelfim,
       mascotName: "Delfi",
-      name: "Correnteza",
-      age: "12-14 anos",
+      name: "Iniciação",
+      age: "5-7 anos",
       color: "bg-blue-500",
-      description: "Refinamento técnico e desenvolvimento de resistência",
-      skills: ["4 estilos completos", "Viradas e saídas", "Resistência física", "Velocidade"],
+      description: "Início do aprendizado técnico dos movimentos básicos da natação",
+      skills: ["Crawl básico", "Costas inicial", "Coordenação pernas/braços", "Respiração lateral"],
     },
     {
       mascot: mascotLuma,
       mascotName: "Luminha",
-      name: "Ritmo & Técnica",
-      age: "15-17 anos",
+      name: "Aperfeiçoamento 1",
+      age: "7-9 anos",
       color: "bg-indigo-500",
-      description: "Técnica avançada com foco em performance e condicionamento",
-      skills: ["Técnica avançada", "Treino intervalado", "Performance", "Condicionamento"],
+      description: "Desenvolvimento técnico com refinamento dos estilos crawl e costas",
+      skills: ["Crawl refinado", "Costas técnico", "Distâncias médias", "Viradas básicas"],
     },
     {
       mascot: mascotCaranguejo,
       mascotName: "Pitoco",
-      name: "Adulto Iniciante",
-      age: "18+ anos",
+      name: "Aperfeiçoamento 2",
+      age: "9-12 anos",
       color: "bg-purple-500",
-      description: "Adaptação ao meio líquido e aprendizado dos fundamentos básicos",
-      skills: ["Perda do medo", "Flutuação", "Respiração", "Movimentos básicos"],
+      description: "Aprimoramento técnico com introdução aos estilos peito e borboleta",
+      skills: ["Peito completo", "Borboleta inicial", "Resistência aumentada", "Técnica apurada"],
     },
     {
       mascot: mascotCavalo,
       mascotName: "Hipinho",
-      name: "Adulto Intermediário",
-      age: "18+ anos",
+      name: "Aperfeiçoamento 3",
+      age: "12+ anos",
       color: "bg-purple-600",
-      description: "Desenvolvimento técnico e aumento da resistência física",
-      skills: ["Crawl e costas", "Distância aumentada", "Resistência", "Técnica refinada"],
-    },
-    {
-      mascot: mascotBaleia,
-      mascotName: "Belinha",
-      name: "Adulto Avançado",
-      age: "18+ anos",
-      color: "bg-purple-700",
-      description: "Aperfeiçoamento técnico dos quatro estilos e treinamento específico",
-      skills: ["4 estilos completos", "Alta performance", "Treino específico", "Competição"],
+      description: "Domínio dos quatro estilos com foco em performance e condicionamento",
+      skills: ["4 estilos completos", "Viradas e saídas", "Velocidade e resistência", "Treino específico"],
     },
   ];
 
@@ -113,7 +103,7 @@ const Levels = () => {
               </span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed animate-fade-in">
-              9 níveis estruturados do bebê ao adulto, cada um com objetivos claros, 
+              8 níveis estruturados do bebê ao adolescente, cada um com objetivos claros, 
               competências mensuráveis e critérios de progressão bem definidos
             </p>
           </div>
@@ -203,7 +193,7 @@ const Levels = () => {
             </p>
             <a
               href="/contato"
-              className="inline-block bg-primary text-primary-foreground font-bold px-8 py-4 rounded-lg hover:bg-primary/90 transition-smooth shadow-card hover:shadow-hover"
+              className="inline-block bg-primary text-primary-foreground font-bold px-8 py-4 rounded-lg hover:bg-primary/90 hover:scale-105 hover:-translate-y-1 transition-all duration-300 shadow-card hover:shadow-hover animate-pulse hover:animate-none"
             >
               Agende Sua Avaliação
             </a>

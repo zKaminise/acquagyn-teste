@@ -107,7 +107,7 @@ const About = () => {
                   className="p-6 text-center hover:shadow-hover transition-smooth hover:scale-105"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
-                  <div className="text-4xl font-bold gradient-ocean bg-clip-text text-transparent mb-2">
+                  <div className="text-4xl font-bold text-primary mb-2">
                     {stat.number}
                   </div>
                   <div className="text-sm text-muted-foreground">{stat.label}</div>
