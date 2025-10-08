@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Shield, Target, Award, Sparkles, BookOpen, ClipboardCheck, Trophy, Flame, CheckCircle2 } from "lucide-react";
-import methodologyDiagram from "@/assets/methodology-diagram-new.jpg";
+import methodologyDiagram from "@/assets/progression-structure.jpg";
 
 const Methodology = () => {
   const pillars = [
