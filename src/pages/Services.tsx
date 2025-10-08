@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Waves, Activity, Users, Clock, DollarSign, Phone, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -205,6 +206,72 @@ const Services = () => {
                 </div>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 bg-accent/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center mb-12 animate-fade-in">
+              <Badge variant="default" className="mb-4">
+                Perguntas Frequentes
+              </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold mb-4">
+                Tire suas <span className="text-gradient-animated">Dúvidas</span>
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                Respostas para as perguntas mais comuns sobre nossos serviços
+              </p>
+            </div>
+
+            <Accordion type="single" collapsible className="space-y-4 animate-fade-in">
+              <AccordionItem value="item-1" className="bg-background rounded-lg px-6 border shadow-card">
+                <AccordionTrigger className="text-left font-semibold hover:no-underline">
+                  As Piscinas são aquecidas?
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground">
+                  Sim! Nossas piscinas possuem temperatura controlada para garantir conforto e segurança durante as aulas.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-2" className="bg-background rounded-lg px-6 border shadow-card">
+                <AccordionTrigger className="text-left font-semibold hover:no-underline">
+                  O que preciso levar para as aulas?
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground">
+                  Os alunos devem trazer maiô/sunga, touca, óculos de natação, toalha e chinelo. No caso da hidroginástica, recomendamos também roupas confortáveis para a prática aquática.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-3" className="bg-background rounded-lg px-6 border shadow-card">
+                <AccordionTrigger className="text-left font-semibold hover:no-underline">
+                  Posso fazer uma aula experimental antes de me matricular?
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground">
+                  Sim! Oferecemos uma aula experimental gratuita para que você possa conhecer nosso método e estrutura.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-4" className="bg-background rounded-lg px-6 border shadow-card">
+                <AccordionTrigger className="text-left font-semibold hover:no-underline">
+                  É necessário saber nadar para praticar Hidroginástica?
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground">
+                  Não. A hidroginástica é realizada em piscinas com profundidade segura e sempre com acompanhamento de um profissional qualificado.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-5" className="bg-background rounded-lg px-6 border shadow-card">
+                <AccordionTrigger className="text-left font-semibold hover:no-underline">
+                  Vocês fornecem materiais como pranchas e flutuadores?
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground">
+                  Sim! Todo o material necessário para as aulas é fornecido pela escola.
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
         </div>
       </section>
