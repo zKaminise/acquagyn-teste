@@ -5,11 +5,13 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { Waves, Award, Users, ArrowRight, Shield, Target, Sparkles, TrendingUp, Building2 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
+import Autoplay from "embla-carousel-autoplay";
 import heroPool from "@/assets/hero-pool.jpg";
-import facilityPoolMain from "@/assets/facility-pool-main.jpg";
-import facilityPoolKids from "@/assets/facility-pool-kids.jpg";
-import facilityLockers from "@/assets/facility-lockers.jpg";
-import facilityReception from "@/assets/facility-reception.jpg";
+import facilityPoolMain from "@/assets/facility-pool-main-new.png";
+import facilityReception from "@/assets/facility-reception-new.png";
+import facilityPoolHidro from "@/assets/facility-pool-hidro.png";
+import facilityMaterials from "@/assets/facility-materials.png";
+import facilityPoolFull from "@/assets/facility-pool-full.png";
 
 const Home = () => {
   const [api, setApi] = useState<CarouselApi>();
@@ -26,6 +28,11 @@ const Home = () => {
       setCurrent(api.selectedScrollSnap());
     });
   }, [api]);
+
+  const autoplayPlugin = Autoplay({
+    delay: 4000,
+    stopOnInteraction: true,
+  });
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -193,13 +200,21 @@ const Home = () => {
           </div>
 
           <div className="max-w-5xl mx-auto">
-            <Carousel setApi={setApi} className="w-full">
+            <Carousel 
+              setApi={setApi} 
+              className="w-full"
+              plugins={[autoplayPlugin]}
+              opts={{
+                loop: true,
+              }}
+            >
               <CarouselContent>
                 {[
                   { image: facilityPoolMain, title: "Piscina Principal", desc: "Piscina aquecida com raias profissionais e iluminação ideal" },
-                  { image: facilityPoolKids, title: "Área Infantil", desc: "Espaço especial para crianças com água aquecida e segurança total" },
-                  { image: facilityLockers, title: "Vestiários", desc: "Vestiários modernos e higienizados para seu conforto" },
                   { image: facilityReception, title: "Recepção", desc: "Ambiente acolhedor com equipe pronta para atendê-lo" },
+                  { image: facilityPoolHidro, title: "Aula de Hidroginástica", desc: "Turmas de hidroginástica com instrutores qualificados" },
+                  { image: facilityMaterials, title: "Materiais de Qualidade", desc: "Equipamentos modernos e materiais para todas as aulas" },
+                  { image: facilityPoolFull, title: "Estrutura Completa", desc: "Piscina ampla com equipamentos coloridos para todas as idades" },
                 ].map((facility, index) => (
                   <CarouselItem key={index}>
                     <Card className="overflow-hidden border-0 shadow-hover">
