@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Waves } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
+import logoAcquagyn from "@/assets/logo-acquagyn.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,12 +36,13 @@ const Header = () => {
           {/* Logo */}
           <Link
             to="/"
-            className="flex items-center gap-2 hover:opacity-80 transition-smooth"
+            className="flex items-center hover:opacity-80 transition-smooth"
           >
-            <Waves className="w-8 h-8 text-primary animate-wave" />
-            <span className="text-2xl font-bold text-primary">
-              Acquagyn
-            </span>
+            <img 
+              src={logoAcquagyn} 
+              alt="Acquagyn Logo" 
+              className="h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}

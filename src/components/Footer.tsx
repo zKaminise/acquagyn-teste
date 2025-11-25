@@ -1,5 +1,6 @@
-import { Waves, Facebook, Instagram, Youtube } from "lucide-react";
+import { Facebook, Instagram, Youtube } from "lucide-react";
 import { Link } from "react-router-dom";
+import logoAcquagyn from "@/assets/logo-acquagyn.png";
 
 const Footer = () => {
 
@@ -9,9 +10,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Logo & Description */}
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
-              <Waves className="w-8 h-8 text-primary" />
-              <span className="text-2xl font-bold">Acquagyn</span>
+            <div className="flex items-center mb-4">
+              <img 
+                src={logoAcquagyn} 
+                alt="Acquagyn Logo" 
+                className="h-12 w-auto brightness-0 invert"
+              />
             </div>
             <p className="text-background/80 mb-4 leading-relaxed">
               Educação e Saúde por meio da Natação e Hidroginástica desde 1994. 
