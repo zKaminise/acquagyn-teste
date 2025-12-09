@@ -7,11 +7,11 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Autoplay from "embla-carousel-autoplay";
 import heroPool from "@/assets/hero-pool.jpg";
-import facilityPoolMain from "@/assets/facility-pool-main-new.png";
-import facilityReception from "@/assets/facility-reception-new.png";
-import facilityPoolHidro from "@/assets/facility-pool-hidro.png";
-import facilityMaterials from "@/assets/facility-materials.png";
-import facilityPoolFull from "@/assets/facility-pool-full.png";
+import facilityPoolMain from "@/assets/facility-pool-main-new2.jpg";
+import facilityReception from "@/assets/facility-reception-new2.jpg";
+import facilityPoolHidro from "@/assets/facility-hidro-class.jpg";
+import facilityMaterials from "@/assets/facility-materials-new.jpg";
+import facilityAccessibility from "@/assets/facility-accessibility.jpg";
 
 const Home = () => {
   const [api, setApi] = useState<CarouselApi>();
@@ -214,7 +214,7 @@ const Home = () => {
                   { image: facilityReception, title: "Recepção", desc: "Ambiente acolhedor com equipe pronta para atendê-lo" },
                   { image: facilityPoolHidro, title: "Aula de Hidroginástica", desc: "Turmas de hidroginástica com instrutores qualificados" },
                   { image: facilityMaterials, title: "Materiais de Qualidade", desc: "Equipamentos modernos e materiais para todas as aulas" },
-                  { image: facilityPoolFull, title: "Estrutura Completa", desc: "Piscina ampla com equipamentos coloridos para todas as idades" },
+                  { image: facilityAccessibility, title: "Acessibilidade", desc: "Escada de acesso com corrimão para entrada segura na piscina" },
                 ].map((facility, index) => (
                   <CarouselItem key={index}>
                     <Card className="overflow-hidden border-0 shadow-hover">
