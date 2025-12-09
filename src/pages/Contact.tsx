@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { MapPin, Phone, Mail, Clock, ExternalLink, Send, MessageCircle } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Send, MessageCircle } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -47,7 +47,7 @@ const Contact = () => {
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Telefone</h3>
                   <p className="text-muted-foreground">
-                    Entre em contato para mais informações sobre horários e planos
+                    (34) 3217-1207
                   </p>
                 </div>
               </div>
@@ -59,7 +59,7 @@ const Contact = () => {
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">E-mail</h3>
                   <p className="text-muted-foreground">
-                    Envie sua mensagem que retornaremos em breve
+                    michelampk31@gmail.com
                   </p>
                 </div>
               </div>
@@ -71,7 +71,7 @@ const Contact = () => {
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Localização</h3>
                   <p className="text-muted-foreground">
-                    Visite nossa unidade e conheça nossa estrutura de perto
+                    Rua Itabira 783, Daniel Fonseca, Uberlândia MG
                   </p>
                 </div>
               </div>
@@ -83,77 +83,60 @@ const Contact = () => {
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Horário de Atendimento</h3>
                   <div className="text-muted-foreground">
-                    <p>Segunda a Sexta: 7h às 21h</p>
-                    <p>Sábado: 8h às 18h</p>
+                    <p>Segunda a Quinta: 06h30 às 20h00</p>
                   </div>
                 </div>
               </div>
             </Card>
 
             {/* CTA Card */}
-            <div className="space-y-6">
-              <Card className="p-8 flex flex-col justify-center items-center text-center space-y-6 bg-gradient-to-br from-card to-primary/5 shadow-card hover:shadow-hover transition-smooth animate-fade-in">
-                <div className="w-20 h-20 rounded-full gradient-ocean flex items-center justify-center animate-ripple">
-                  <MessageCircle className="w-10 h-10 text-white" />
-                </div>
-                
-                <div>
-                  <h2 className="text-2xl font-bold mb-3 text-foreground">
-                    Aula Experimental Gratuita
-                  </h2>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Conheça nossa metodologia na prática! Agende uma aula experimental 
-                    e descubra por que somos referência em natação há mais de 30 anos.
-                  </p>
-                </div>
-
-                <div className="space-y-3 w-full">
-                  <Button variant="hero" size="lg" className="w-full text-lg group">
-                    <Send className="w-5 h-5 mr-2 group-hover:translate-x-1 transition-smooth" />
-                    Agendar Aula Experimental
-                  </Button>
-                  
-                  <Button variant="outline" size="lg" className="w-full text-lg border-2">
-                    Ver Planos e Horários
-                  </Button>
-                </div>
-              </Card>
-
-              <Card className="p-8 bg-gradient-to-br from-secondary/10 to-primary/5 shadow-card hover:shadow-hover transition-smooth animate-fade-in">
-                <div className="flex items-center gap-4 mb-4">
-                  <ExternalLink className="w-8 h-8 text-primary" />
-                  <h3 className="text-xl font-bold">Sistema de Avaliações</h3>
-                </div>
-                <p className="text-muted-foreground mb-4">
-                  Acesse nosso sistema para consultar avaliações e acompanhar o progresso dos alunos
+            <Card className="p-8 flex flex-col justify-center items-center text-center space-y-6 bg-gradient-to-br from-card to-primary/5 shadow-card hover:shadow-hover transition-smooth animate-fade-in">
+              <div className="w-20 h-20 rounded-full gradient-ocean flex items-center justify-center animate-ripple">
+                <MessageCircle className="w-10 h-10 text-white" />
+              </div>
+              
+              <div>
+                <h2 className="text-2xl font-bold mb-3 text-foreground">
+                  Aula Experimental Gratuita
+                </h2>
+                <p className="text-muted-foreground leading-relaxed">
+                  Conheça nossa metodologia na prática! Agende uma aula experimental 
+                  e descubra por que somos referência em natação há mais de 30 anos.
                 </p>
-                <a
-                  href="https://avaliacoes.acquagyn.com.br/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-primary hover:underline font-medium"
-                >
-                  Acessar Sistema
-                  <ExternalLink className="w-4 h-4" />
-                </a>
-              </Card>
-            </div>
+              </div>
+
+              <Button variant="hero" size="lg" className="w-full text-lg group">
+                <Send className="w-5 h-5 mr-2 group-hover:translate-x-1 transition-smooth" />
+                Agendar Aula Experimental
+              </Button>
+            </Card>
           </div>
         </div>
       </section>
 
-      {/* Map Section Placeholder */}
+      {/* Map Section */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
-          <Card className="max-w-6xl mx-auto p-12 text-center shadow-hover animate-fade-in">
-            <MapPin className="w-16 h-16 text-primary mx-auto mb-6" />
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">Venha nos Visitar</h2>
-            <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Nossa unidade está preparada para recebê-lo. Agende uma visita e conheça 
-              nossa estrutura completa com piscinas aquecidas e ambiente seguro.
-            </p>
-            <div className="bg-muted/50 rounded-xl h-96 flex items-center justify-center">
-              <p className="text-muted-foreground">Mapa da localização</p>
+          <Card className="max-w-6xl mx-auto p-8 md:p-12 shadow-hover animate-fade-in">
+            <div className="text-center mb-8">
+              <MapPin className="w-16 h-16 text-primary mx-auto mb-6" />
+              <h2 className="text-2xl md:text-3xl font-bold mb-4">Venha nos Visitar</h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                Nossa unidade está preparada para recebê-lo. Agende uma visita e conheça 
+                nossa estrutura completa com piscinas aquecidas e ambiente seguro.
+              </p>
+            </div>
+            <div className="rounded-xl overflow-hidden h-96">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.123456789!2d-48.2767!3d-18.9234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sRua%20Itabira%2C%20783%20-%20Daniel%20Fonseca%2C%20Uberl%C3%A2ndia%20-%20MG!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Localização Acquagyn"
+              />
             </div>
           </Card>
         </div>
