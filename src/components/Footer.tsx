@@ -69,11 +69,19 @@ const Footer = () => {
           {/* Contact */}
           <div>
             <h3 className="text-lg font-bold mb-4">Contato</h3>
-            <ul className="space-y-2 text-background/80">
+            <ul className="space-y-4 text-background/80">
               <li>
                 <Link to="/contato" className="hover:text-primary transition-smooth">
                   Fale Conosco
                 </Link>
+              </li>
+              <li>
+                <span className="font-semibold text-background block mb-1">Localização</span>
+                <span className="text-sm">Rua Itabira 783, Daniel Fonseca, Uberlândia MG</span>
+              </li>
+              <li>
+                <span className="font-semibold text-background block mb-1">Horário de Atendimento</span>
+                <span className="text-sm">Segunda a Quinta: 06h30 às 20h00</span>
               </li>
             </ul>
           </div>
