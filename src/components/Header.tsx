@@ -48,17 +48,6 @@ const Header = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-6">
             <Link
-              to="/"
-              className={`text-foreground hover:text-primary transition-smooth font-medium relative ${
-                isActive("/") ? "text-primary font-semibold" : ""
-              }`}
-            >
-              Home
-              {isActive("/") && (
-                <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-primary" />
-              )}
-            </Link>
-            <Link
               to="/sobre"
               className={`text-foreground hover:text-primary transition-smooth font-medium relative ${
                 isActive("/sobre") ? "text-primary font-semibold" : ""
@@ -136,14 +125,6 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
           <div className="md:hidden mt-4 pb-4 space-y-3 animate-fade-in">
-            <Link
-              to="/"
-              className={`block w-full text-left py-2 transition-smooth font-medium ${
-                isActive("/") ? "text-primary font-semibold" : "text-foreground hover:text-primary"
-              }`}
-            >
-              Home
-            </Link>
             <Link
               to="/sobre"
               className={`block w-full text-left py-2 transition-smooth font-medium ${
