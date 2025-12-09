@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom";
 import { Card } from "@/components/ui/card";
-import { Shield, TrendingUp, Heart, Users, Clock, Droplet, Award, Target, CheckCircle2 } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Shield, TrendingUp, Heart, Users, Clock, Droplet, Award, Target, CheckCircle2, MessageCircle } from "lucide-react";
 
 const About = () => {
   const features = [
@@ -203,6 +205,24 @@ const About = () => {
               fundamentais, sempre com uma equipe altamente qualificada e estrutura de primeira linha.
             </p>
           </Card>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-16 bg-primary/10">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Ficou com alguma dúvida?
+          </h2>
+          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+            Entre em contato conosco e tire suas dúvidas. Estamos prontos para atendê-lo!
+          </p>
+          <Link to="/contato">
+            <Button variant="hero" size="lg" className="gap-2">
+              <MessageCircle className="w-5 h-5" />
+              Fale Conosco
+            </Button>
+          </Link>
         </div>
       </section>
     </div>
