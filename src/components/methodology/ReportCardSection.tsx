@@ -313,11 +313,165 @@ const ReportCardSection = () => {
                 ))}
               </div>
             </Card>
+
+            {/* Frequência & Participação */}
+            <div className="grid grid-cols-2 gap-4">
+              <Card className="p-4 bg-primary/5 border-primary/20">
+                <div className="flex items-center gap-2 mb-3 text-primary">
+                  <span>📊</span>
+                  <span className="font-bold text-sm">Frequência</span>
+                </div>
+                <div className="space-y-2 text-sm">
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">Total de aulas:</span>
+                    <span className="border-b border-dashed border-muted-foreground/30 w-16" />
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">Presenças:</span>
+                    <span className="border-b border-dashed border-muted-foreground/30 w-16" />
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">Percentual:</span>
+                    <span className="border-b border-dashed border-muted-foreground/30 w-16" />
+                  </div>
+                </div>
+              </Card>
+              <Card className="p-4 bg-primary/5 border-primary/20">
+                <div className="flex items-center gap-2 mb-3 text-primary">
+                  <span>⭐</span>
+                  <span className="font-bold text-sm">Participação</span>
+                </div>
+                <div className="space-y-2 text-sm">
+                  <div className="flex items-center gap-2">
+                    <input type="checkbox" className="w-4 h-4" readOnly />
+                    <span>Excelente 🌟</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <input type="checkbox" className="w-4 h-4" readOnly />
+                    <span>Boa 👍</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <input type="checkbox" className="w-4 h-4" readOnly />
+                    <span>Precisa melhorar 💪</span>
+                  </div>
+                </div>
+              </Card>
+            </div>
+
+            {/* Palavras do Professor */}
+            <Card className="p-4 bg-primary/5 border-primary/20">
+              <div className="flex items-center gap-2 mb-3 text-primary">
+                <span>♡</span>
+                <span className="font-bold">Palavras do Professor(a)</span>
+              </div>
+              <div className="space-y-3">
+                <div>
+                  <div className="text-sm text-muted-foreground mb-1">⭐ Pontos Fortes (o que faz muito bem):</div>
+                  <div className="h-12 border border-dashed border-muted-foreground/30 rounded bg-background" />
+                </div>
+                <div>
+                  <div className="text-sm text-muted-foreground mb-1">🌱 Podemos melhorar em:</div>
+                  <div className="h-12 border border-dashed border-muted-foreground/30 rounded bg-background" />
+                </div>
+                <div>
+                  <div className="text-sm text-muted-foreground mb-1">✨ Destaque do bimestre:</div>
+                  <div className="h-12 border border-dashed border-muted-foreground/30 rounded bg-background" />
+                </div>
+              </div>
+            </Card>
+
+            {/* Objetivos para o Próximo Bimestre */}
+            <Card className="p-4 bg-primary/5 border-primary/20">
+              <div className="flex items-center gap-2 mb-3 text-primary">
+                <span>🎯</span>
+                <span className="font-bold">Objetivos para o Próximo Bimestre</span>
+              </div>
+              <div className="space-y-2">
+                <div className="flex items-center gap-2">
+                  <span>🥇</span>
+                  <div className="flex-1 border-b border-dashed border-muted-foreground/30" />
+                </div>
+                <div className="flex items-center gap-2">
+                  <span>🥈</span>
+                  <div className="flex-1 border-b border-dashed border-muted-foreground/30" />
+                </div>
+                <div className="flex items-center gap-2">
+                  <span>🥉</span>
+                  <div className="flex-1 border-b border-dashed border-muted-foreground/30" />
+                </div>
+              </div>
+            </Card>
+
+            {/* Dicas para Praticar em Casa */}
+            <Card className="p-4 bg-primary/5 border-primary/20">
+              <div className="flex items-center gap-2 mb-3 text-primary">
+                <span>🏠</span>
+                <span className="font-bold">Dicas para Praticar em Casa</span>
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <div className="text-sm text-muted-foreground mb-1">🛁 Na hora do banho:</div>
+                  <div className="h-8 border-b border-dashed border-muted-foreground/30" />
+                </div>
+                <div>
+                  <div className="text-sm text-muted-foreground mb-1">🏃 Exercícios em terra:</div>
+                  <div className="h-8 border-b border-dashed border-muted-foreground/30" />
+                </div>
+              </div>
+            </Card>
+
+            {/* Progressão de Nível */}
+            <Card className={`p-4 bg-gradient-to-r ${selectedLevel.color} text-white`}>
+              <div className="flex items-center gap-2 mb-3">
+                <span>🏊</span>
+                <span className="font-bold">Progressão de Nível</span>
+              </div>
+              <div className="space-y-2 text-sm">
+                <div className="flex items-center gap-2">
+                  <input type="checkbox" className="w-4 h-4" readOnly />
+                  <span>Permanece no nível atual (consolidando)</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <input type="checkbox" className="w-4 h-4" readOnly />
+                  <span>Pronto para avançar! → Próximo nível: ________________</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <input type="checkbox" className="w-4 h-4" readOnly />
+                  <span>Aula de reforço recomendada</span>
+                </div>
+              </div>
+            </Card>
+
+            {/* Espaço da Família */}
+            <Card className="p-4 bg-primary/5 border-primary/20">
+              <div className="flex items-center gap-2 mb-3 text-primary">
+                <span>💬</span>
+                <span className="font-bold">Espaço da Família</span>
+              </div>
+              <div className="text-sm text-muted-foreground mb-2">Comentários, dúvidas ou sugestões:</div>
+              <div className="h-16 border border-dashed border-muted-foreground/30 rounded bg-background mb-4" />
+              <div className="flex justify-between text-sm">
+                <div>
+                  <span className="text-muted-foreground">Assinatura do Responsável:</span>
+                  <div className="w-40 border-b border-muted-foreground/30 mt-1" />
+                </div>
+                <div className="text-right">
+                  <span className="text-muted-foreground">Data:</span>
+                  <div className="w-24 border-b border-muted-foreground/30 mt-1" />
+                </div>
+              </div>
+            </Card>
           </div>
 
-          {/* Footer tip */}
-          <div className="p-4 bg-muted/50 text-center text-sm text-muted-foreground">
-            💡 Clique em "Baixar Boletim PDF" para obter o arquivo pronto para impressão.
+          {/* Footer with contact */}
+          <div className={`p-4 bg-gradient-to-r ${selectedLevel.color} text-white text-center`}>
+            <div className="flex items-center justify-center gap-2 mb-1">
+              <img src={mascotAcqua} alt="" className="w-8 h-8 rounded-full" />
+              <span className="font-bold">Obrigado por confiar na Acquagyn!</span>
+              <span>🌊</span>
+            </div>
+            <p className="text-xs opacity-90">"Cada conquista é um grande passo na jornada aquática." 💙</p>
+            <p className="text-xs opacity-80 mt-1">📷 @acquagyn_oficial | 🌐 www.acquagyn.com.br | ✉ contato@acquagyn.com.br</p>
           </div>
         </Card>
 
