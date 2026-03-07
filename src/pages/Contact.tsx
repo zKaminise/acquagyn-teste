@@ -45,10 +45,15 @@ const Contact = () => {
                   <Phone className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-foreground mb-1 text-sm sm:text-base">Telefone</h3>
-                  <p className="text-muted-foreground text-sm sm:text-base">
+                  <h3 className="font-semibold text-foreground mb-1 text-sm sm:text-base">Telefone / WhatsApp</h3>
+                  <a
+                    href="https://wa.me/553432171207"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary hover:underline text-sm sm:text-base font-medium"
+                  >
                     (34) 3217-1207
-                  </p>
+                  </a>
                 </div>
               </div>
 
