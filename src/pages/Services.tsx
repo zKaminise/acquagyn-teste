@@ -53,7 +53,7 @@ const Services = () => {
                   </div>
                   <div className="flex items-center gap-3">
                     <Clock className="w-5 h-5 text-primary" />
-                    <span className="text-sm">Aulas 2x ou 3x por semana</span>
+                    <span className="text-sm">Aulas 2x na semana</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <DollarSign className="w-5 h-5 text-primary" />
@@ -99,7 +99,7 @@ const Services = () => {
                   </div>
                   <div className="flex items-center gap-3">
                     <Clock className="w-5 h-5 text-primary" />
-                    <span className="text-sm">Aulas 2x ou 3x por semana</span>
+                    <span className="text-sm">Aulas até 4x por semana</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Activity className="w-5 h-5 text-primary" />
