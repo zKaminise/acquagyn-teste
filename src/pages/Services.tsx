@@ -35,9 +35,9 @@ const Services = () => {
                 <div className="w-16 h-16 rounded-full gradient-ocean flex items-center justify-center mb-4">
                   <Waves className="w-8 h-8 text-white" />
                 </div>
-                <CardTitle className="text-3xl">Natação</CardTitle>
+                <CardTitle className="text-3xl">Natação Infantil</CardTitle>
                 <CardDescription className="text-base">
-                  Para todas as idades e níveis
+                  Dos 6 meses aos 13 anos
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
@@ -49,7 +49,7 @@ const Services = () => {
                 <div className="space-y-3">
                   <div className="flex items-center gap-3">
                     <Users className="w-5 h-5 text-primary" />
-                    <span className="text-sm">Turmas de todas as idades</span>
+                    <span className="text-sm">Turmas dos 6 meses aos 13 anos</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Clock className="w-5 h-5 text-primary" />
@@ -145,7 +145,7 @@ const Services = () => {
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <span className="text-primary mt-1">✓</span>
-                        <span>Turmas infantis e adultas</span>
+                        <span>A partir de 2 anos</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-primary mt-1">✓</span>
@@ -164,8 +164,8 @@ const Services = () => {
                       Hidroginástica no SESI
                     </h3>
                     <p className="text-muted-foreground">
-                      Aulas de hidroginástica para crianças e adultos, promovendo saúde 
-                      e qualidade de vida para toda a família.
+                      Aulas de hidroginástica a partir de 15 anos, promovendo saúde 
+                      e qualidade de vida.
                     </p>
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li className="flex items-start gap-2">
