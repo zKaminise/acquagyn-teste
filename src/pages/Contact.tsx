@@ -110,10 +110,12 @@ const Contact = () => {
                 </p>
               </div>
 
-              <Button variant="hero" size="lg" className="w-full text-sm sm:text-base md:text-lg group">
-                <Send className="w-4 h-4 sm:w-5 sm:h-5 mr-2 group-hover:translate-x-1 transition-smooth" />
-                Agendar Aula Experimental
-              </Button>
+              <a href="https://wa.me/553432171207" target="_blank" rel="noopener noreferrer" className="w-full">
+                <Button variant="hero" size="lg" className="w-full text-sm sm:text-base md:text-lg group">
+                  <Send className="w-4 h-4 sm:w-5 sm:h-5 mr-2 group-hover:translate-x-1 transition-smooth" />
+                  Agendar Aula Experimental
+                </Button>
+              </a>
             </Card>
           </div>
         </div>
