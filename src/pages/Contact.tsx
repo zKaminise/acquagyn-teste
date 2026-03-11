@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { MapPin, Phone, Mail, Clock, Send, MessageCircle } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
+import nadadorImg from "@/assets/nadador.png";
 
 const Contact = () => {
   return (
