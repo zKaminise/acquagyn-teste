@@ -1,19 +1,23 @@
 import { useEffect, useRef, useState } from "react";
 import methodologyDiagram from "@/assets/methodology-diagram-new.jpg";
-import mascotLuma from "@/assets/mascot-luma.jpg";
-import mascotTuca from "@/assets/mascot-tuca.jpg";
-import mascotAcqua from "@/assets/mascot-acqua.jpg";
+import mascotEstrelinha from "@/assets/mascot-estrelinha.jpg";
 import mascotBibi from "@/assets/mascot-bibi.jpg";
+import mascotAcqua from "@/assets/mascot-acqua.jpg";
+import mascotTuca from "@/assets/mascot-tuca.jpg";
 import mascotDelfim from "@/assets/mascot-delfim.jpg";
+import mascotLuma from "@/assets/mascot-luma.jpg";
+import mascotCaranguejo from "@/assets/mascot-caranguejo.jpg";
+import mascotCavalo from "@/assets/mascot-cavalo.jpg";
 
 const levels = [
-  { name: "Baby Splash", age: "6-36 meses", mascot: mascotLuma, mascotName: "Luma", hue: "340" },
-  { name: "Peixinhos", age: "3-5 anos", mascot: mascotLuma, mascotName: "Luma", hue: "340" },
-  { name: "Ondas", age: "6-8 anos", mascot: mascotTuca, mascotName: "Tuca", hue: "210" },
-  { name: "Mares", age: "9-11 anos", mascot: mascotAcqua, mascotName: "Acqua", hue: "188" },
-  { name: "Correnteza", age: "12-14 anos", mascot: mascotBibi, mascotName: "Bibi", hue: "45" },
-  { name: "Ritmo & Técnica", age: "15-17 anos", mascot: mascotAcqua, mascotName: "Acqua", hue: "188" },
-  { name: "Adulto", age: "18+ anos", mascot: mascotDelfim, mascotName: "Delfim", hue: "150" },
+  { name: "Baby 1", age: "6-12 meses", mascot: mascotEstrelinha, mascotName: "Stellinha", hue: "340" },
+  { name: "Baby 2", age: "1-2 anos", mascot: mascotBibi, mascotName: "Bibi", hue: "30" },
+  { name: "Baby 3", age: "2-3 anos", mascot: mascotAcqua, mascotName: "Acquinha", hue: "188" },
+  { name: "Adaptação", age: "3-5 anos", mascot: mascotTuca, mascotName: "Tuquinha", hue: "210" },
+  { name: "Iniciação", age: "5-7 anos", mascot: mascotDelfim, mascotName: "Delfi", hue: "220" },
+  { name: "Aperfeiçoamento 1", age: "7-9 anos", mascot: mascotLuma, mascotName: "Luminha", hue: "280" },
+  { name: "Aperfeiçoamento 2", age: "9-12 anos", mascot: mascotCaranguejo, mascotName: "Pitoco", hue: "0" },
+  { name: "Aperfeiçoamento 3", age: "12+ anos", mascot: mascotCavalo, mascotName: "Hipinho", hue: "150" },
 ];
 
 const LevelsSection = () => {
