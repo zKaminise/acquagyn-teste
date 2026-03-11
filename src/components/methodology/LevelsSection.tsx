@@ -93,11 +93,7 @@ const LevelsSection = () => {
                     <img
                       src={level.mascot}
                       alt={level.mascotName}
-                      className="w-full h-full rounded-full object-cover ring-2 ring-offset-2 transition-all duration-300 group-hover/card:scale-110 group-hover/card:ring-4 group-hover/card:rotate-3"
-                      style={{
-                        ringColor: `hsl(${level.hue}, 70%, 50%)`,
-                        borderColor: `hsl(${level.hue}, 70%, 50%)`,
-                      }}
+                      className="w-full h-full rounded-full object-cover ring-2 ring-primary/30 ring-offset-2 transition-all duration-300 group-hover/card:scale-110 group-hover/card:ring-4 group-hover/card:ring-primary/50 group-hover/card:rotate-3"
                     />
                   </div>
                   <h3 className="font-display text-sm sm:text-base font-bold mb-1 leading-tight">{level.name}</h3>
