@@ -25,7 +25,7 @@ interface LevelData {
 const levelsData: LevelData[] = [
   {
     name: "Baby 1", subtitle: "Primeiro Contato", ageRange: "6 a 12 meses", mascot: "Stellinha", mascotImage: mascotEstrelinha,
-    color: "from-pink-400 to-rose-500",
+    color: "from-yellow-400 to-amber-500",
     competencies: ["Adaptação à água com os pais", "Confiança no ambiente aquático", "Movimentos básicos de perninha", "Imersão do rosto (com apoio)", "Cantigas e brincadeiras aquáticas", "Vínculo afetivo na água"],
     badges: ["Primeiro Mergulho", "Bolhas Felizes", "Perninha Alegre", "Estrelinha d'Água"],
     pdfPath: "/boletins/BabySplash.pdf",
