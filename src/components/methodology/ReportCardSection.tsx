@@ -74,7 +74,7 @@ const levelsData: LevelData[] = [
   },
   {
     name: "Aperfeiçoamento 3", subtitle: "Excelência Aquática", ageRange: "12+ anos", mascot: "Hipinho", mascotImage: mascotCavalo,
-    color: "from-emerald-400 to-green-600",
+    color: "from-blue-400 to-blue-600",
     competencies: ["Domínio total dos 4 estilos", "Treinamento de resistência avançado", "Técnica de viradas e saídas", "Preparação competitiva", "Condicionamento avançado", "Liderança na água"],
     badges: ["Mestre Aquático", "Resistência Diamante", "Técnica Platina", "Campeão Completo"],
     pdfPath: "/boletins/Adulto.pdf",
