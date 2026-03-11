@@ -249,7 +249,7 @@ const ReportCardSection = () => {
                   <div className="space-y-2 text-sm">
                     {["Excelente 🌟", "Boa 👍", "Precisa melhorar 💪"].map((l) => (
                       <div key={l} className="flex items-center gap-2">
-                        <input type="checkbox" className="w-4 h-4 accent-primary" readOnly />
+                        <input type="checkbox" className="w-4 h-4 accent-primary pointer-events-none" readOnly />
                         <span className="text-xs">{l}</span>
                       </div>
                     ))}
