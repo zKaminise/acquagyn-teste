@@ -224,7 +224,7 @@ const ReportCardSection = () => {
                 <div className="grid grid-cols-2 gap-2">
                   {selectedLevel.badges.map((badge, index) => (
                     <div key={index} className="flex items-center gap-2 p-2 bg-card rounded-xl">
-                      <input type="checkbox" className="w-4 h-4 accent-primary" readOnly />
+                      <input type="checkbox" className="w-4 h-4 accent-primary pointer-events-none" readOnly />
                       <span className="text-sm">{badge}</span>
                     </div>
                   ))}
@@ -249,7 +249,7 @@ const ReportCardSection = () => {
                   <div className="space-y-2 text-sm">
                     {["Excelente 🌟", "Boa 👍", "Precisa melhorar 💪"].map((l) => (
                       <div key={l} className="flex items-center gap-2">
-                        <input type="checkbox" className="w-4 h-4 accent-primary" readOnly />
+                        <input type="checkbox" className="w-4 h-4 accent-primary pointer-events-none" readOnly />
                         <span className="text-xs">{l}</span>
                       </div>
                     ))}
@@ -302,7 +302,7 @@ const ReportCardSection = () => {
                 <div className="space-y-2 text-sm">
                   {["Permanece no nível atual (consolidando)", "Pronto para avançar! → Próximo nível: ________________", "Aula de reforço recomendada"].map((l) => (
                     <div key={l} className="flex items-center gap-2">
-                      <input type="checkbox" className="w-4 h-4" readOnly />
+                      <input type="checkbox" className="w-4 h-4 pointer-events-none" readOnly />
                       <span className="text-xs sm:text-sm">{l}</span>
                     </div>
                   ))}
