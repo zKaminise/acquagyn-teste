@@ -139,15 +139,6 @@ const Contact = () => {
                 </a>
               </div>
 
-              {/* Floating WhatsApp bubble */}
-              <a
-                href="https://wa.me/553432171207"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="absolute bottom-6 right-6 w-14 h-14 rounded-full bg-green-500 flex items-center justify-center shadow-lg animate-float hover:scale-110 transition-smooth z-20"
-              >
-                <img src={whatsappIcon} alt="WhatsApp" className="w-7 h-7" />
-              </a>
             </div>
           </div>
         </div>
