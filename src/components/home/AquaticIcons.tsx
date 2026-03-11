@@ -1,4 +1,8 @@
-export const WaveIcon = ({ className = "" }: { className?: string }) => (
+import { SVGProps } from "react";
+
+type IconProps = SVGProps<SVGSVGElement> & { className?: string };
+
+export const WaveIcon = ({ className = "", ...props }: IconProps) => (
   <svg viewBox="0 0 64 64" fill="none" className={className}>
     <path d="M8 36C14 28 22 44 28 36C34 28 42 44 48 36C54 28 58 36 58 36" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
     <path d="M8 44C14 36 22 52 28 44C34 36 42 52 48 44C54 36 58 44 58 44" stroke="currentColor" strokeWidth="3" strokeLinecap="round" opacity="0.5" />
