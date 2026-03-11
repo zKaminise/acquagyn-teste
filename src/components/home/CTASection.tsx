@@ -47,7 +47,7 @@ const CTASection = () => {
             <Button
               size="lg"
               variant="outline"
-              className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 font-semibold text-base sm:text-lg rounded-full px-10"
+              className="border-accent/50 text-accent hover:bg-accent/10 hover:border-accent font-semibold text-base sm:text-lg rounded-full px-10"
             >
               Ver Níveis de Ensino
             </Button>

@@ -70,7 +70,7 @@ const HeroSection = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="text-base sm:text-lg font-semibold rounded-full px-8 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 hover:border-primary-foreground/50"
+                className="text-base sm:text-lg font-semibold rounded-full px-8 border-accent/50 text-accent hover:bg-accent/10 hover:border-accent"
               >
                 Fale Conosco
               </Button>
