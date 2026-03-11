@@ -49,8 +49,8 @@ const Header = () => {
           <div className="hidden md:flex items-center gap-6">
             <Link
               to="/sobre"
-              className={`text-foreground hover:text-primary transition-smooth font-medium relative ${
-                isActive("/sobre") ? "text-primary font-semibold" : ""
+              className={`hover:text-primary transition-smooth font-medium relative ${
+                isActive("/sobre") ? "text-primary font-semibold" : isScrolled ? "text-foreground" : "text-white"
               }`}
             >
               Sobre
@@ -60,8 +60,8 @@ const Header = () => {
             </Link>
             <Link
               to="/metodologia"
-              className={`text-foreground hover:text-primary transition-smooth font-medium relative ${
-                isActive("/metodologia") ? "text-primary font-semibold" : ""
+              className={`hover:text-primary transition-smooth font-medium relative ${
+                isActive("/metodologia") ? "text-primary font-semibold" : isScrolled ? "text-foreground" : "text-white"
               }`}
             >
               Metodologia
@@ -71,8 +71,8 @@ const Header = () => {
             </Link>
             <Link
               to="/servicos"
-              className={`text-foreground hover:text-primary transition-smooth font-medium relative ${
-                isActive("/servicos") ? "text-primary font-semibold" : ""
+              className={`hover:text-primary transition-smooth font-medium relative ${
+                isActive("/servicos") ? "text-primary font-semibold" : isScrolled ? "text-foreground" : "text-white"
               }`}
             >
               Serviços
@@ -82,8 +82,8 @@ const Header = () => {
             </Link>
             <Link
               to="/niveis"
-              className={`text-foreground hover:text-primary transition-smooth font-medium relative ${
-                isActive("/niveis") ? "text-primary font-semibold" : ""
+              className={`hover:text-primary transition-smooth font-medium relative ${
+                isActive("/niveis") ? "text-primary font-semibold" : isScrolled ? "text-foreground" : "text-white"
               }`}
             >
               Níveis
@@ -93,8 +93,8 @@ const Header = () => {
             </Link>
             <Link
               to="/mascotes"
-              className={`text-foreground hover:text-primary transition-smooth font-medium relative ${
-                isActive("/mascotes") ? "text-primary font-semibold" : ""
+              className={`hover:text-primary transition-smooth font-medium relative ${
+                isActive("/mascotes") ? "text-primary font-semibold" : isScrolled ? "text-foreground" : "text-white"
               }`}
             >
               Mascotes
@@ -112,7 +112,7 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden text-foreground hover:text-primary transition-smooth"
+            className={`md:hidden hover:text-primary transition-smooth ${isScrolled ? "text-foreground" : "text-white"}`}
           >
             {isMobileMenuOpen ? (
               <X className="w-6 h-6" />
