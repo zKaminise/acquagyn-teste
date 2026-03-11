@@ -96,7 +96,7 @@ const Contact = () => {
 
             {/* CTA Card */}
             <Card className="p-5 sm:p-6 md:p-8 flex flex-col justify-center items-center text-center space-y-4 sm:space-y-5 md:space-y-6 bg-gradient-to-br from-card to-primary/5 shadow-card hover:shadow-hover transition-smooth animate-fade-in">
-              <div className="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 rounded-full gradient-ocean flex items-center justify-center animate-ripple">
+              <div className="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 rounded-full gradient-ocean flex items-center justify-center animate-pulse shadow-lg">
                 <MessageCircle className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 text-white" />
               </div>
               
@@ -110,10 +110,12 @@ const Contact = () => {
                 </p>
               </div>
 
-              <Button variant="hero" size="lg" className="w-full text-sm sm:text-base md:text-lg group">
-                <Send className="w-4 h-4 sm:w-5 sm:h-5 mr-2 group-hover:translate-x-1 transition-smooth" />
-                Agendar Aula Experimental
-              </Button>
+              <a href="https://wa.me/553432171207" target="_blank" rel="noopener noreferrer" className="w-full">
+                <Button variant="hero" size="lg" className="w-full text-sm sm:text-base md:text-lg group">
+                  <Send className="w-4 h-4 sm:w-5 sm:h-5 mr-2 group-hover:translate-x-1 transition-smooth" />
+                  Agendar Aula Experimental
+                </Button>
+              </a>
             </Card>
           </div>
         </div>
