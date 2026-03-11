@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import heroPool from "@/assets/hero-pool.jpg";
 import Bubbles from "./Bubbles";
 import WaveDivider from "./WaveDivider";
-import { WaveIcon, SwimmerIcon, DropletIcon } from "./AquaticIcons";
+import { WaveIcon, DropletIcon } from "./AquaticIcons";
 
 const HeroSection = () => {
   return (
@@ -26,7 +26,6 @@ const HeroSection = () => {
       {/* Floating aquatic icons */}
       <div className="absolute inset-0 z-[2] pointer-events-none hidden md:block">
         <WaveIcon className="absolute top-[20%] right-[10%] w-16 h-16 text-primary-foreground/10 animate-float" />
-        <SwimmerIcon className="absolute bottom-[30%] right-[15%] w-20 h-20 text-primary-foreground/8 animate-float-slow" style={{ animationDelay: "2s" }} />
         <DropletIcon className="absolute top-[35%] left-[8%] w-12 h-12 text-primary-foreground/10 animate-float" style={{ animationDelay: "4s" }} />
       </div>
 
@@ -71,7 +70,7 @@ const HeroSection = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="text-base sm:text-lg font-semibold rounded-full px-8 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 hover:border-primary-foreground/50"
+                className="text-base sm:text-lg font-semibold rounded-full px-8 border-accent/50 text-accent hover:bg-accent/10 hover:border-accent"
               >
                 Fale Conosco
               </Button>
