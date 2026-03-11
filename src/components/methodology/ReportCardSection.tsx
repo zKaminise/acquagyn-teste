@@ -46,7 +46,7 @@ const levelsData: LevelData[] = [
   },
   {
     name: "Adaptação", subtitle: "Adaptação ao Meio Aquático", ageRange: "3 a 5 anos", mascot: "Tuquinha", mascotImage: mascotTuca,
-    color: "from-blue-400 to-blue-600",
+    color: "from-emerald-400 to-green-600",
     competencies: ["Crawl completo com respiração", "Costas com braçada alternada", "Introdução ao nado peito", "Virada simples (cambalhota)", "Resistência: 25m sem parar", "Flutuação de sobrevivência"],
     badges: ["Golfinho Veloz", "Virada Turbo", "Resistência Bronze", "Técnica Afiada"],
     pdfPath: "/boletins/Mares.pdf",
