@@ -166,7 +166,7 @@ const Mascots = () => {
           </div>
         </div>
 
-        <WaveDivider position="bottom" />
+        <WaveDivider />
       </section>
 
       {/* Mascots Grid */}
