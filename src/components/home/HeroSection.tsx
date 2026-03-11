@@ -26,7 +26,6 @@ const HeroSection = () => {
       {/* Floating aquatic icons */}
       <div className="absolute inset-0 z-[2] pointer-events-none hidden md:block">
         <WaveIcon className="absolute top-[20%] right-[10%] w-16 h-16 text-primary-foreground/10 animate-float" />
-        <SwimmerIcon className="absolute bottom-[30%] right-[15%] w-20 h-20 text-primary-foreground/8 animate-float-slow" style={{ animationDelay: "2s" }} />
         <DropletIcon className="absolute top-[35%] left-[8%] w-12 h-12 text-primary-foreground/10 animate-float" style={{ animationDelay: "4s" }} />
       </div>
 
