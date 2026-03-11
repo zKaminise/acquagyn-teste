@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import heroPool from "@/assets/hero-pool.jpg";
 import Bubbles from "./Bubbles";
 import WaveDivider from "./WaveDivider";
-import { WaveIcon, SwimmerIcon, DropletIcon } from "./AquaticIcons";
+import { WaveIcon, DropletIcon } from "./AquaticIcons";
 
 const HeroSection = () => {
   return (
