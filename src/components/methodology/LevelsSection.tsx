@@ -71,7 +71,7 @@ const LevelsSection = () => {
           {/* Timeline line */}
           <div className="hidden lg:block absolute top-16 left-0 right-0 h-0.5 bg-gradient-to-r from-primary/10 via-primary/40 to-primary/10" />
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-4 lg:gap-3">
+          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-4 lg:gap-3">
             {levels.map((level, i) => (
               <div
                 key={i}
@@ -92,8 +92,8 @@ const LevelsSection = () => {
                 />
 
                 {/* Card */}
-                <div className="glass-card rounded-2xl p-4 text-center w-full hover:shadow-hover hover:-translate-y-2 transition-all duration-500 group/card cursor-default">
-                  <div className="relative mx-auto w-14 h-14 sm:w-16 sm:h-16 mb-3">
+                <div className="glass-card rounded-2xl p-4 text-center w-full h-full min-h-[180px] flex flex-col items-center justify-start hover:shadow-hover hover:-translate-y-2 transition-all duration-500 group/card cursor-default">
+                  <div className="relative mx-auto w-14 h-14 sm:w-16 sm:h-16 mb-3 flex-shrink-0">
                     <img
                       src={level.mascot}
                       alt={level.mascotName}
