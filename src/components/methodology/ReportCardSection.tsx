@@ -1,10 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Download, Star, CheckCircle } from "lucide-react";
 import { useState } from "react";
-import mascotLuma from "@/assets/mascot-luma.jpg";
+import mascotEstrelinha from "@/assets/mascot-estrelinha.jpg";
+import mascotBibi from "@/assets/mascot-bibi.jpg";
 import mascotAcqua from "@/assets/mascot-acqua.jpg";
 import mascotTuca from "@/assets/mascot-tuca.jpg";
-import mascotBibi from "@/assets/mascot-bibi.jpg";
+import mascotDelfim from "@/assets/mascot-delfim.jpg";
+import mascotLuma from "@/assets/mascot-luma.jpg";
+import mascotCaranguejo from "@/assets/mascot-caranguejo.jpg";
+import mascotCavalo from "@/assets/mascot-cavalo.jpg";
 
 interface LevelData {
   name: string;
@@ -20,58 +24,65 @@ interface LevelData {
 
 const levelsData: LevelData[] = [
   {
-    name: "Baby Splash", subtitle: "Primeiro Contato", ageRange: "6 meses a 2 anos", mascot: "Luma", mascotImage: mascotLuma,
-    color: "from-pink-400 to-pink-500",
+    name: "Baby 1", subtitle: "Primeiro Contato", ageRange: "6 a 12 meses", mascot: "Stellinha", mascotImage: mascotEstrelinha,
+    color: "from-pink-400 to-rose-500",
     competencies: ["Adaptação à água com os pais", "Confiança no ambiente aquático", "Movimentos básicos de perninha", "Imersão do rosto (com apoio)", "Cantigas e brincadeiras aquáticas", "Vínculo afetivo na água"],
     badges: ["Primeiro Mergulho", "Bolhas Felizes", "Perninha Alegre", "Estrelinha d'Água"],
     pdfPath: "/boletins/BabySplash.pdf",
   },
   {
-    name: "Peixinhos", subtitle: "Adaptação ao Meio Aquático", ageRange: "3 a 4 anos", mascot: "Luma", mascotImage: mascotLuma,
-    color: "from-cyan-400 to-cyan-500",
+    name: "Baby 2", subtitle: "Exploração Aquática", ageRange: "1 a 2 anos", mascot: "Bibi", mascotImage: mascotBibi,
+    color: "from-orange-400 to-amber-500",
     competencies: ["Entra na água com confiança", "Sopra bolhas na superfície", "Flutuação com apoio", "Pernada básica com prancha", "Imersão completa do rosto", "Deslocamento básico (cachorrinho)"],
     badges: ["Soprador de Bolhas", "Flutuador Estrela", "Peixinho Corajoso", "Amigo da Água"],
     pdfPath: "/boletins/Peixinhos.pdf",
   },
   {
-    name: "Ondas", subtitle: "Desenvolvimento de Habilidades", ageRange: "5 a 6 anos", mascot: "Tuca", mascotImage: mascotTuca,
-    color: "from-blue-400 to-blue-500",
+    name: "Baby 3", subtitle: "Autonomia na Água", ageRange: "2 a 3 anos", mascot: "Acquinha", mascotImage: mascotAcqua,
+    color: "from-cyan-400 to-teal-500",
     competencies: ["Flutuação ventral e dorsal", "Respiração lateral básica", "Crawl com prancha (braço/perna)", "Costas elementar", "Mergulho até o fundo (raso)", "Regras de segurança na borda"],
     badges: ["Tartaruga Segura", "Respiração Campeã", "Flutuador Mestre", "Guardião da Borda"],
     pdfPath: "/boletins/Ondas.pdf",
   },
   {
-    name: "Mares", subtitle: "Refinamento Técnico", ageRange: "7 a 9 anos", mascot: "Acqua", mascotImage: mascotAcqua,
-    color: "from-teal-400 to-teal-500",
+    name: "Adaptação", subtitle: "Adaptação ao Meio Aquático", ageRange: "3 a 5 anos", mascot: "Tuquinha", mascotImage: mascotTuca,
+    color: "from-blue-400 to-blue-600",
     competencies: ["Crawl completo com respiração", "Costas com braçada alternada", "Introdução ao nado peito", "Virada simples (cambalhota)", "Resistência: 25m sem parar", "Flutuação de sobrevivência"],
     badges: ["Golfinho Veloz", "Virada Turbo", "Resistência Bronze", "Técnica Afiada"],
     pdfPath: "/boletins/Mares.pdf",
   },
   {
-    name: "Correnteza", subtitle: "Aperfeiçoamento", ageRange: "10 a 12 anos", mascot: "Bibi", mascotImage: mascotBibi,
-    color: "from-indigo-400 to-indigo-500",
+    name: "Iniciação", subtitle: "Desenvolvimento de Habilidades", ageRange: "5 a 7 anos", mascot: "Delfi", mascotImage: mascotDelfim,
+    color: "from-indigo-400 to-indigo-600",
     competencies: ["4 estilos olímpicos básicos", "Viradas olímpicas (crawl/costas)", "Saídas do bloco", "Resistência: 100m crawl", "Introdução ao treinamento", "Noções de pace e tempo"],
     badges: ["Borboleta Iniciante", "4 Estilos", "Virada Olímpica", "Resistência Prata"],
     pdfPath: "/boletins/Correnteza.pdf",
   },
   {
-    name: "Ritmo & Técnica", subtitle: "Jovem Técnico", ageRange: "13 a 17 anos", mascot: "Acqua", mascotImage: mascotAcqua,
-    color: "from-purple-400 to-purple-500",
+    name: "Aperfeiçoamento 1", subtitle: "Refinamento Técnico", ageRange: "7 a 9 anos", mascot: "Luminha", mascotImage: mascotLuma,
+    color: "from-purple-400 to-violet-600",
     competencies: ["Técnica refinada nos 4 estilos", "Medley completo", "Resistência: 400m contínuos", "Treinamento intervalado", "Análise técnica de vídeo", "Preparação para competições"],
     badges: ["Medley Master", "Técnica Ouro", "Resistência Ouro", "Pronto para Competir"],
     pdfPath: "/boletins/RitmoTecnica.pdf",
   },
   {
-    name: "Adulto", subtitle: "Natação Completa", ageRange: "18+ anos", mascot: "Acqua", mascotImage: mascotAcqua,
-    color: "from-emerald-400 to-emerald-500",
-    competencies: ["Adaptação/superação de medos", "Crawl funcional", "Costas para relaxamento", "Resistência cardiovascular", "Técnicas de sobrevivência", "Condicionamento físico"],
+    name: "Aperfeiçoamento 2", subtitle: "Alta Performance", ageRange: "9 a 12 anos", mascot: "Pitoco", mascotImage: mascotCaranguejo,
+    color: "from-red-400 to-rose-600",
+    competencies: ["Adaptação/superação de medos", "Crawl funcional avançado", "Costas para relaxamento", "Resistência cardiovascular", "Técnicas de sobrevivência", "Condicionamento físico"],
     badges: ["Superação Aquática", "Condicionamento Top", "Crawl Fluente", "Natação Master"],
+    pdfPath: "/boletins/Adulto.pdf",
+  },
+  {
+    name: "Aperfeiçoamento 3", subtitle: "Excelência Aquática", ageRange: "12+ anos", mascot: "Hipinho", mascotImage: mascotCavalo,
+    color: "from-emerald-400 to-green-600",
+    competencies: ["Domínio total dos 4 estilos", "Treinamento de resistência avançado", "Técnica de viradas e saídas", "Preparação competitiva", "Condicionamento avançado", "Liderança na água"],
+    badges: ["Mestre Aquático", "Resistência Diamante", "Técnica Platina", "Campeão Completo"],
     pdfPath: "/boletins/Adulto.pdf",
   },
 ];
 
 const ReportCardSection = () => {
-  const [selectedLevelIndex, setSelectedLevelIndex] = useState(1);
+  const [selectedLevelIndex, setSelectedLevelIndex] = useState(0);
   const selectedLevel = levelsData[selectedLevelIndex];
 
   const handleDownload = () => {
@@ -140,7 +151,7 @@ const ReportCardSection = () => {
                 <div className="flex items-start justify-between relative z-10">
                   <div>
                     <div className="flex items-center gap-2 mb-2">
-                      <img src={mascotAcqua} alt="" className="w-8 h-8 rounded-full ring-2 ring-white/30" />
+                      <img src={selectedLevel.mascotImage} alt="" className="w-8 h-8 rounded-full ring-2 ring-white/30" />
                       <div>
                         <div className="font-display font-bold">ACQUAGYN</div>
                         <div className="text-xs opacity-80">Desde 1994 - Metodologia que Transforma</div>
@@ -319,7 +330,7 @@ const ReportCardSection = () => {
             {/* Footer */}
             <div className={`p-4 bg-gradient-to-r ${selectedLevel.color} text-white text-center`}>
               <div className="flex items-center justify-center gap-2 mb-1">
-                <img src={mascotAcqua} alt="" className="w-7 h-7 rounded-full ring-1 ring-white/30" />
+                <img src={selectedLevel.mascotImage} alt="" className="w-7 h-7 rounded-full ring-1 ring-white/30" />
                 <span className="font-display font-bold text-sm">Obrigado por confiar na Acquagyn! 🌊</span>
               </div>
               <p className="text-xs opacity-80">📷 @acquagyn_oficial | 🌐 www.acquagyn.com.br | ✉ contato@acquagyn.com.br</p>
