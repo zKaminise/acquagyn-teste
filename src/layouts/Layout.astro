@@ -1,0 +1,71 @@
+---
+import '@fontsource-variable/manrope';
+import '../styles/global.css';
+const title = 'Acquagyn | Natação e Hidroginástica em Uberlândia';
+const description =
+  'Desde 1994 em Uberlândia. Natação infantil, natação para adultos e hidroginástica com a metodologia Acquagyn. Agende uma aula experimental.';
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  '@id': 'https://www.acquagyn.com.br/#school',
+  name: 'Acquagyn',
+  url: 'https://www.acquagyn.com.br/',
+  description,
+  foundingDate: '1994',
+  telephone: '+553432171207',
+  email: 'michelampk31@gmail.com',
+  logo: 'https://www.acquagyn.com.br/images/logo.png',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Rua Itabira, 783, Daniel Fonseca',
+    addressLocality: 'Uberlândia',
+    addressRegion: 'MG',
+    addressCountry: 'BR',
+  },
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday'],
+      opens: '06:30',
+      closes: '20:00',
+    },
+  ],
+  sameAs: ['https://www.instagram.com/acquagyn.natacao/', 'https://www.facebook.com/enacquagyn'],
+};
+---
+
+<!doctype html>
+<html lang="pt-BR" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <script is:inline>
+      document.documentElement.classList.remove('no-js');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#062e40" />
+    <link
+      rel="preload"
+      as="image"
+      href="/images/water-1672.webp"
+      imagesrcset="/images/water-640.webp 640w, /images/water-1280.webp 1280w, /images/water-1672.webp 1672w"
+      imagesizes="100vw"
+    />
+    <link rel="icon" href="/favicon.png" type="image/png" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href="https://www.acquagyn.com.br/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Acquagyn" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content="https://www.acquagyn.com.br/" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(schema)}></script>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

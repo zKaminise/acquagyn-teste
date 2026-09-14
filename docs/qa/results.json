@@ -1,0 +1,668 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\Importante\\Codex\\Acquagyn\\node_modules\\@playwright\\test\\cli.js",
+      "test"
+    ],
+    "configFile": "D:\\Importante\\Codex\\Acquagyn\\playwright.config.ts",
+    "rootDir": "D:/Importante/Codex/Acquagyn/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/Importante/Codex/Acquagyn/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "D:/Importante/Codex/Acquagyn/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "docs/qa/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 2,
+    "webServer": {
+      "command": "node scripts/serve-build.mjs",
+      "url": "http://127.0.0.1:4322",
+      "reuseExistingServer": true,
+      "timeout": 20000
+    }
+  },
+  "suites": [
+    {
+      "title": "landing.spec.ts",
+      "file": "landing.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "layout, images, console and performance at 360px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2528,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-14T01:52:28.272Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4e5b49d369fd48ca0656-71f9450dee91c72c1c92",
+          "file": "landing.spec.ts",
+          "line": 16,
+          "column": 3
+        },
+        {
+          "title": "layout, images, console and performance at 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3897,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-14T01:52:31.483Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4e5b49d369fd48ca0656-cc736e30d0ea14f6607b",
+          "file": "landing.spec.ts",
+          "line": 16,
+          "column": 3
+        },
+        {
+          "title": "layout, images, console and performance at 430px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2209,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-14T01:52:35.386Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4e5b49d369fd48ca0656-960bdc593b2d494686fc",
+          "file": "landing.spec.ts",
+          "line": 16,
+          "column": 3
+        },
+        {
+          "title": "layout, images, console and performance at 768px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2255,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-14T01:52:37.601Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4e5b49d369fd48ca0656-93831cef1bd3e5cc38e3",
+          "file": "landing.spec.ts",
+          "line": 16,
+          "column": 3
+        },
+        {
+          "title": "layout, images, console and performance at 1024px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2857,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-14T01:52:39.862Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4e5b49d369fd48ca0656-fc1cf9854e0ce2da6c4e",
+          "file": "landing.spec.ts",
+          "line": 16,
+          "column": 3
+        },
+        {
+          "title": "layout, images, console and performance at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5792,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-14T01:52:42.726Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4e5b49d369fd48ca0656-0eba6d7fed345a3ee3c5",
+          "file": "landing.spec.ts",
+          "line": 16,
+          "column": 3
+        },
+        {
+          "title": "layout, images, console and performance at 1920px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2790,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-14T01:52:48.525Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4e5b49d369fd48ca0656-edc0d0cca0f068096ca5",
+          "file": "landing.spec.ts",
+          "line": 16,
+          "column": 3
+        },
+        {
+          "title": "mobile menu: keyboard, Escape, focus and section links",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 805,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-14T01:52:51.323Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4e5b49d369fd48ca0656-fb1a291440fd205f3ffb",
+          "file": "landing.spec.ts",
+          "line": 80,
+          "column": 1
+        },
+        {
+          "title": "all local links, PDFs, CTAs and SEO",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 707,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-14T01:52:52.133Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4e5b49d369fd48ca0656-f5574ce90ebddc52873a",
+          "file": "landing.spec.ts",
+          "line": 104,
+          "column": 1
+        },
+        {
+          "title": "reduced motion and accessibility at 360px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 772,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-14T01:52:52.848Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4e5b49d369fd48ca0656-a54aa588eb04516c5f4c",
+          "file": "landing.spec.ts",
+          "line": 167,
+          "column": 3
+        },
+        {
+          "title": "reduced motion and accessibility at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 943,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-14T01:52:53.627Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4e5b49d369fd48ca0656-60f45fbb3cea0f3ea16f",
+          "file": "landing.spec.ts",
+          "line": 167,
+          "column": 3
+        },
+        {
+          "title": "motion responds to scroll and can be disabled while browsing",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1816,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-14T01:52:54.576Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4e5b49d369fd48ca0656-e40b8699ca0fff0f743b",
+          "file": "landing.spec.ts",
+          "line": 185,
+          "column": 1
+        },
+        {
+          "title": "legacy URLs resolve to the single page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 896,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-14T01:52:56.398Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4e5b49d369fd48ca0656-7095b76c5715cfa12386",
+          "file": "landing.spec.ts",
+          "line": 199,
+          "column": 1
+        },
+        {
+          "title": "content and CTAs work with JavaScript disabled",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 286,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-14T01:52:57.301Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4e5b49d369fd48ca0656-159fb6e0f35f41d3aed8",
+          "file": "landing.spec.ts",
+          "line": 214,
+          "column": 1
+        },
+        {
+          "title": "film loads on demand, plays and closes accessibly",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 452,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-14T01:52:57.595Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4e5b49d369fd48ca0656-a4ad1f8698bb61e4a486",
+          "file": "landing.spec.ts",
+          "line": 229,
+          "column": 1
+        },
+        {
+          "title": "gallery advances with scroll and manual reduced motion restores static content",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2104,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-14T01:52:58.052Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4e5b49d369fd48ca0656-e102b92e5b36fecc6e55",
+          "file": "landing.spec.ts",
+          "line": 255,
+          "column": 1
+        },
+        {
+          "title": "visual review of sections and enlarged text",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7606,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-14T01:53:00.164Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4e5b49d369fd48ca0656-b08ed415efaef3ca6e17",
+          "file": "landing.spec.ts",
+          "line": 281,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-14T01:52:27.644Z",
+    "duration": 40356.443999999996,
+    "expected": 17,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

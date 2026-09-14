@@ -1,0 +1,32 @@
+---
+import { values } from '../data/content';
+import Photo from '../components/Photo.astro';
+---
+
+<section class="values" aria-labelledby="values-title">
+  <div class="section-kicker">
+    <h2 id="values-title" class="eyebrow">
+      O QUE NOS MOVE
+    </h2>
+    <span class="eyebrow">DENTRO E FORA DA ÁGUA</span>
+  </div>
+  <div class="values-layout">
+    <div class="values-visual" aria-hidden="true">
+      {values.map((v, i) => (
+        <div class:list={['value-photo', { 'is-active': i === 0 }]}>
+          <Photo name={v.photo} alt="" sizes="42vw" />
+        </div>
+      ))}
+      <span class="values-visual-caption">CUIDADO EM CADA DETALHE.</span>
+    </div>
+    <div class="values-copy">
+      {values.map((v, i) => (
+        <article class="value-step" data-value={i}>
+          <p class="eyebrow">0{i + 1} / NOSSA MANEIRA DE ENSINAR</p>
+          <h3>{v.title}</h3>
+          <p>{v.description}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

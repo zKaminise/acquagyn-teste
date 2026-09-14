@@ -1,0 +1,81 @@
+---
+import Photo from '../components/Photo.astro';
+import Arrow from '../components/Arrow.astro';
+import { business } from '../data/business';
+---
+
+<section id="estrutura" class="facilities" aria-labelledby="facilities-title">
+  <div class="facilities-heading">
+    <p class="eyebrow">04 / POR DENTRO DA ACQUAGYN</p>
+    <h2 id="facilities-title" data-reveal>
+      O lugar das suas
+      <br />
+      <em>próximas conquistas.</em>
+    </h2>
+    <p>Gente de verdade. Nossa piscina. O cuidado que você encontra a cada visita.</p>
+  </div>
+  <figure class="pool-reveal">
+    <div class="pool-reveal-stage">
+      <div class="pool-reveal-image">
+        <Photo name="pool" alt="Estrutura real da piscina coberta e aquecida da Acquagyn" />
+      </div>
+      <div class="pool-reveal-next" aria-hidden="true">
+        <Photo name="hidro" alt="" />
+      </div>
+      <figcaption>
+        <span class="gallery-caption-primary">Piscina coberta e aquecida.</span>
+        <span class="gallery-caption-next" aria-hidden="true">
+          A energia de estar junto.
+        </span>
+        <button
+          class="gallery-play"
+          data-open-film
+          aria-haspopup="dialog"
+          aria-controls="school-film"
+        >
+          <span class="play-disc" aria-hidden="true">
+            ▶
+          </span>
+          <span>
+            ASSISTA AO VÍDEO
+            <br />
+            CONHEÇA O NOSSO ESPAÇO
+          </span>
+        </button>
+      </figcaption>
+      <div class="gallery-progress" aria-hidden="true">
+        <span></span>
+      </div>
+    </div>
+  </figure>
+  <div class="facility-pair">
+    <figure class="facility-reception" data-parallax>
+      <Photo
+        name="reception"
+        alt="Recepção da Acquagyn, com cadeiras e balcão de atendimento"
+        sizes="(max-width: 767px) 100vw, 58vw"
+      />
+      <figcaption>
+        <span>01</span> Acolhimento desde a chegada.
+      </figcaption>
+    </figure>
+    <figure class="facility-access" data-parallax>
+      <Photo
+        name="accessibility"
+        alt="Escada com dois corrimãos para acesso à piscina da Acquagyn"
+        width={960}
+        height={1280}
+        sizes="(max-width: 767px) 80vw, 29vw"
+      />
+      <figcaption>
+        <span>02</span> Acesso à piscina com corrimãos.
+      </figcaption>
+    </figure>
+  </div>
+  <div class="facilities-location">
+    <span>RUA ITABIRA, 783 · DANIEL FONSECA · UBERLÂNDIA</span>
+    <a class="text-link" href={business.maps} target="_blank" rel="noopener noreferrer">
+      Venha conhecer de perto <Arrow diagonal />
+    </a>
+  </div>
+</section>

@@ -1,0 +1,31 @@
+<dialog class="film-dialog" id="school-film" aria-labelledby="film-title">
+  <div class="film-header">
+    <div>
+      <p class="eyebrow">ACQUAGYN · POR DENTRO</p>
+      <h2 id="film-title">Conheça o nosso espaço.</h2>
+    </div>
+    <button class="film-close" aria-label="Fechar vídeo">
+      Fechar <span aria-hidden="true">×</span>
+    </button>
+  </div>
+  <video
+    id="acquagyn-film"
+    controls
+    playsinline
+    preload="none"
+    poster="/images/pool-1280.webp"
+    aria-label="Vídeo de apresentação da estrutura da Acquagyn"
+    data-src="/videos/acquagyn-film.mp4"
+  ></video>
+  <p class="film-caption">
+    Um passeio visual criado a partir das fotos reais da escola. Vídeo sem áudio.
+  </p>
+  <a
+    href="/videos/acquagyn-film.mp4"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="film-fallback"
+  >
+    Abrir vídeo em outra aba ↗
+  </a>
+</dialog>

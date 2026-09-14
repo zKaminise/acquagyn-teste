@@ -1,0 +1,28 @@
+---
+import BookingLink from '../components/BookingLink.astro';
+import WaterLines from '../components/WaterLines.astro';
+---
+
+<section id="contato" class="contact-scene" aria-labelledby="contact-title">
+  <img
+    class="contact-water"
+    src="/images/water-1280.webp"
+    srcset="/images/water-640.webp 640w, /images/water-1280.webp 1280w, /images/water-1672.webp 1672w"
+    sizes="100vw"
+    width="1672"
+    height="941"
+    alt=""
+    loading="lazy"
+  />
+  <WaterLines />
+  <div class="contact-content">
+    <span class="eyebrow">06 / A GENTE TE ESPERA NA ÁGUA</span>
+    <h2 id="contact-title" data-reveal>
+      Seu próximo mergulho <br />
+      <em>pode começar aqui.</em>
+    </h2>
+    <p>Conheça a metodologia Acquagyn em uma aula experimental gratuita.</p>
+    <BookingLink label="AGENDAR AULA EXPERIMENTAL" />
+    <span class="contact-caption">Fale com a nossa equipe pelo WhatsApp.</span>
+  </div>
+</section>

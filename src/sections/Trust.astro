@@ -1,0 +1,53 @@
+---
+import { testimonials } from '../data/content';
+import BookingLink from '../components/BookingLink.astro';
+---
+
+<section class="trust section-light" aria-labelledby="trust-title">
+  <span class="eyebrow">05 / UMA HISTÓRIA QUE CONTINUA</span>
+  <div class="trust-main">
+    <div class="trust-year" aria-hidden="true">
+      1994<span>FOI SÓ O COMEÇO.</span>
+    </div>
+    <div class="trust-copy">
+      <h2 id="trust-title">
+        Desde 1994
+        <br />
+        <em>em Uberlândia.</em>
+      </h2>
+      <p>
+        Mais de três décadas dedicadas à educação e à saúde por meio da natação. Uma história que
+        segue em movimento, a cada pessoa que entra na água.
+      </p>
+      <BookingLink label="Venha viver essa experiência" variant="dark" />
+    </div>
+  </div>
+  {testimonials.filter((t) => t.approved && t.sourceUrl).length > 0 && (
+    <div class="testimonials" aria-label="Depoimentos de alunos">
+      {testimonials
+        .filter((t) => t.approved && t.sourceUrl)
+        .map((t) => (
+          <figure>
+            <blockquote>{t.quote}</blockquote>
+            <figcaption>
+              {t.author} · {t.context}
+              <a href={t.sourceUrl} target="_blank" rel="noopener noreferrer">
+                Ver fonte
+              </a>
+            </figcaption>
+          </figure>
+        ))}
+    </div>
+  )}
+  <div class="partnership">
+    <span class="eyebrow">TAMBÉM EM PARCERIA COM O SESI ROOSEVELT</span>
+    <p>Natação para crianças e adultos. Hidroginástica a partir de 15 anos.</p>
+    <a
+      href="https://wa.me/553432171207?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20as%20aulas%20no%20SESI%20Roosevelt."
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Consultar turmas e local ↗
+    </a>
+  </div>
+</section>

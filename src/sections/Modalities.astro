@@ -1,0 +1,69 @@
+---
+import { modalities } from '../data/content';
+import Photo from '../components/Photo.astro';
+import BookingLink from '../components/BookingLink.astro';
+---
+
+<section id="modalidades" class="modalities" aria-labelledby="modalities-title">
+  <div class="modality-intro">
+    <p class="eyebrow">02 / ENCONTRE O SEU MOVIMENTO</p>
+    <h2 id="modalities-title" data-reveal>
+      A água muda com
+      <br />
+      <em>cada fase da vida.</em>
+    </h2>
+    <nav class="modality-nav" aria-label="Modalidades">
+      {modalities.map((m, i) => (
+        <a href={`#${m.id}`}>
+          <span>0{i + 1}</span>
+          {m.name}
+        </a>
+      ))}
+    </nav>
+  </div>
+  {modalities.map((m, i) => (
+    <article
+      id={m.id}
+      class:list={['modality-scene', `modality-scene--${m.id}`]}
+      aria-labelledby={`${m.id}-title`}
+    >
+      <div class="modality-image" data-parallax>
+        <Photo name={m.photo} alt={m.alt} sizes="(max-width: 767px) 100vw, 56vw" />
+        <div class="image-caption">
+          <span>{m.caption}</span>
+          <span>ACQUAGYN · UBERLÂNDIA</span>
+        </div>
+      </div>
+      <div class="modality-content">
+        <span class="scene-number" aria-hidden="true">
+          0{i + 1}
+        </span>
+        <p class="eyebrow">{m.name}</p>
+        <h3 id={`${m.id}-title`} data-reveal>
+          {m.title.split('\n').map((line, j) =>
+            j === 0 ? (
+              <>
+                {line}
+                <br />
+              </>
+            ) : (
+              <em>{line}</em>
+            ),
+          )}
+        </h3>
+        <p class="body-copy">{m.description}</p>
+        <ul class="tag-list">
+          {m.tags.map((tag) => (
+            <li>{tag}</li>
+          ))}
+        </ul>
+        <p class="modality-note">{m.note}</p>
+        <BookingLink
+          label="Agendar aula experimental"
+          modality={m.name.toLowerCase()}
+          variant={i === 1 ? 'light' : 'dark'}
+        />
+      </div>
+    </article>
+  ))}
+</section>

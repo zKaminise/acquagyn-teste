@@ -1,0 +1,29 @@
+---
+import { bookingUrl } from '../data/business';
+import Arrow from './Arrow.astro';
+interface Props {
+  label?: string;
+  modality?: string;
+  variant?: string;
+  class?: string;
+}
+const {
+  label = 'Agende uma aula experimental',
+  modality,
+  variant = 'light',
+  class: className,
+} = Astro.props;
+---
+
+<a
+  href={bookingUrl(modality)}
+  class:list={['button', `button--${variant}`, className]}
+  target="_blank"
+  rel="noopener noreferrer"
+  data-booking
+>
+  <span>{label}</span>
+  <span class="button-arrow">
+    <Arrow diagonal />
+  </span>
+</a>

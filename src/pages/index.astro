@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../sections/Hero.astro';
+import Story from '../sections/Story.astro';
+import Modalities from '../sections/Modalities.astro';
+import Methodology from '../sections/Methodology.astro';
+import Values from '../sections/Values.astro';
+import Facilities from '../sections/Facilities.astro';
+import Trust from '../sections/Trust.astro';
+import Contact from '../sections/Contact.astro';
+import Footer from '../components/Footer.astro';
+import FilmPlayer from '../components/FilmPlayer.astro';
+---
+
+<Layout>
+  <Header />
+  <main id="main">
+    <Hero />
+    <Story />
+    <Modalities />
+    <Methodology />
+    <Values />
+    <Facilities />
+    <Trust />
+    <Contact />
+  </main>
+  <Footer />
+  <FilmPlayer />
+</Layout>
+<script>
+  import '../scripts/main';
+</script>

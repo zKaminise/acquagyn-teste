@@ -1,0 +1,29 @@
+---
+export function getStaticPaths() {
+  return [
+    { params: { legacy: 'sobre' }, props: { anchor: 'acquagyn' } },
+    { params: { legacy: 'servicos' }, props: { anchor: 'modalidades' } },
+    { params: { legacy: 'metodologia' }, props: { anchor: 'metodologia' } },
+    { params: { legacy: 'niveis' }, props: { anchor: 'metodologia' } },
+    { params: { legacy: 'mascotes' }, props: { anchor: 'metodologia' } },
+    { params: { legacy: 'contato' }, props: { anchor: 'contato' } },
+  ];
+}
+const target = `/#${Astro.props.anchor}`;
+---
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="refresh" content={`0;url=${target}`} />
+    <link rel="canonical" href="https://www.acquagyn.com.br/" />
+    <meta name="robots" content="noindex,follow" />
+    <title>Acquagyn — Natação em Uberlândia</title>
+  </head>
+  <body>
+    <p>Encontre a Acquagyn em nossa nova página.</p>
+    <a href={target}>Continuar para a Acquagyn</a>
+  </body>
+</html>

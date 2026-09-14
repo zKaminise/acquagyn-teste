@@ -1,0 +1,99 @@
+---
+import { levels } from '../data/content';
+import Arrow from '../components/Arrow.astro';
+import { bookingUrl } from '../data/business';
+---
+
+<section id="metodologia" class="methodology section-light" aria-labelledby="method-title">
+  <div class="section-kicker">
+    <span class="eyebrow">03 / METODOLOGIA ACQUAGYN</span>
+    <span class="eyebrow">CADA CONQUISTA CONTA</span>
+  </div>
+  <div class="method-layout">
+    <div class="method-intro">
+      <h2 id="method-title" data-reveal>
+        Você não simplesmente faz aulas.
+        <br />
+        <em>Você evolui.</em>
+      </h2>
+      <p class="body-copy">
+        Uma metodologia própria, com etapas de aprendizagem, avaliação e evolução individual. Da
+        primeira descoberta ao aperfeiçoamento, existe um próximo passo.
+      </p>
+      <div class="method-mark" aria-hidden="true">
+        <span>09</span>
+        <div>
+          NÍVEIS ANUNCIADOS.
+          <br />
+          CADA ETAPA,
+          <br />
+          UMA DESCOBERTA.
+        </div>
+      </div>
+      <p class="method-disclaimer">
+        Oito etapas descritas e uma em confirmação. As idades são referências. A avaliação da equipe
+        orienta a indicação do nível.
+      </p>
+      <a class="text-link" href={bookingUrl()} target="_blank" rel="noopener noreferrer">
+        Descubra seu ponto de partida <Arrow diagonal />
+      </a>
+    </div>
+    <div class="journey-wrap">
+      <div class="journey-line" aria-hidden="true">
+        <span></span>
+      </div>
+      <ol class="level-journey">
+        {levels.map((level, i) => (
+          <li class:list={['level-step', { 'level-pending': level.pending }]}>
+            <span class="level-marker" aria-hidden="true">
+              {String(i + 1).padStart(2, '0')}
+            </span>
+            <details open={i === 0}>
+              <summary>
+                <span class="level-heading">
+                  <span class="level-age">{level.age}</span>
+                  <span class="level-name">{level.name}</span>
+                </span>
+                {level.image && (
+                  <img
+                    class="level-mascot"
+                    src={`/images/mascot-${level.image}.webp`}
+                    width="64"
+                    height="64"
+                    alt={level.mascot}
+                    loading="lazy"
+                  />
+                )}
+                <span class="details-plus" aria-hidden="true">
+                  +
+                </span>
+              </summary>
+              <div class="level-description">
+                <p>{level.description}</p>
+                {level.mascot && (
+                  <span class="mascot-caption">Seu companheiro nesta etapa: {level.mascot}.</span>
+                )}
+                {level.pdf && (
+                  <a
+                    href={`/boletins/${level.pdf}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="level-download"
+                  >
+                    Ver boletim da etapa (PDF) <Arrow diagonal />
+                  </a>
+                )}
+              </div>
+            </details>
+          </li>
+        ))}
+      </ol>
+      <p class="method-resources">
+        <a href="/boletins/Adulto.pdf" target="_blank" rel="noopener noreferrer">
+          Boletim adulto (PDF) ↗
+        </a>
+        <span>Consulte a equipe para indicação da etapa.</span>
+      </p>
+    </div>
+  </div>
+</section>

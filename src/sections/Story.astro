@@ -1,0 +1,60 @@
+---
+import Arrow from '../components/Arrow.astro';
+---
+
+<section id="acquagyn" class="story section-light" aria-labelledby="story-title">
+  <div class="section-kicker">
+    <span class="eyebrow">01 / NOSSA ESSÊNCIA</span>
+    <span class="eyebrow">DESDE 1994</span>
+  </div>
+  <div class="story-heading">
+    <span class="story-intro">
+      A água é o começo.
+      <br />A confiança fica para a vida.
+    </span>
+    <h2 id="story-title">
+      {'Mais de 30 anos ensinando pessoas a se sentirem'.split(' ').map((word) => (
+        <Fragment>
+          <span class="story-word">{word}</span>{' '}
+        </Fragment>
+      ))}
+      <em>
+        {'seguras dentro da água.'.split(' ').map((word) => (
+          <Fragment>
+            <span class="story-word">{word}</span>{' '}
+          </Fragment>
+        ))}
+      </em>
+    </h2>
+  </div>
+  <div class="story-bottom">
+    <p>
+      Somos a Acquagyn. Uma escola de natação em Uberlândia que conecta educação, saúde e movimento.
+      Aqui, aprender a nadar é uma jornada de descobertas — em cada fase da vida.
+    </p>
+    <div class="story-stats">
+      <div>
+        <span class="stat-number">
+          <span data-counter="30">30</span>
+          <sup>+</sup>
+        </span>
+        <span class="stat-label">anos de experiência</span>
+      </div>
+      <div>
+        <span class="stat-number">09</span>
+        <span class="stat-label">
+          níveis anunciados<sup>*</sup>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="story-footnote">
+    <span>
+      1994 <span class="year-line" aria-hidden="true"></span> HOJE
+    </span>
+    <a class="text-link" href="#metodologia">
+      Cada conquista, um próximo passo <Arrow />
+    </a>
+  </div>
+  <p class="content-note">*Consulte abaixo as etapas e os detalhes em atualização.</p>
+</section>
