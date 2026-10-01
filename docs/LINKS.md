@@ -24,7 +24,7 @@ Os destinos comerciais foram recuperados do HTML e do bundle público da escola.
 | `/mascotes` | `/#metodologia` |
 | `/contato` | `/#contato` |
 
-As seis URLs foram testadas contra o build. Mantêm HTML de encaminhamento como fallback; o servidor de produção deverá aplicar as regras 301 da sua plataforma. As rotas do site antigo retornavam 404 em acesso direto.
+As seis URLs foram testadas contra o build. Mantêm HTML de encaminhamento como fallback. Na revisão de 30/09/2026, `vercel.json` passou a configurar os redirecionamentos permanentes na Vercel. As rotas do site antigo retornavam 404 em acesso direto na auditoria inicial.
 
 ## PDFs preservados
 

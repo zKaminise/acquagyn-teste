@@ -1,6 +1,8 @@
 # Resultados finais de testes
 
-17 testes aprovados; 0 falhas; 0 ignorados. Tempo total: 40.4s.
+Revisão de publicação de 30/09/2026: 25 verificações aprovadas em Chromium e WebKit.
+
+Os quatro cenários suplementares de Firefox não puderam executar: o navegador local retornou `spawn UNKNOWN` ao iniciar, inclusive após reinstalação oficial, antes de abrir a página. Essa limitação não foi contabilizada como aprovação. `npm run test:firefox` permite repetir em outro ambiente.
 
 Build: aprovado. Astro/TypeScript: 0 erros, 0 avisos, 0 hints.
 
@@ -50,4 +52,13 @@ JavaScript sem compressão e gzip calculado localmente (a hospedagem precisa ser
 - Filme: 1.481.408 bytes, 18s, 1280×720, 24fps, H.264, yuv420p, sem áudio; carregado somente por ação.
 - A fonte é local; não há WebGL, analytics, vídeo de fundo automático nem bibliotecas de interface React.
 
-O relatório bruto é `docs/qa/results.json`; screenshots e dados por viewport estão na mesma pasta. As checagens cobrem Chromium em larguras simuladas; Safari/iOS físico e métricas da hospedagem ainda não foram medidos.
+O relatório bruto atualizado é `docs/qa/results.json`; screenshots e dados por viewport estão na mesma pasta. As checagens atuais cobrem Chromium e WebKit em larguras simuladas, incluindo 320px e paisagem 844×390. Safari/iOS físico e métricas reais dos visitantes não foram medidos. A tabela de métricas acima registra o laboratório da primeira entrega; os JSONs por largura contêm os valores da revisão atual.
+
+## Revisão visual e de produção
+
+- Logo enviada pelo usuário preservada byte a byte e apresentada nas cores originais, sem filtro de recoloração.
+- Marca e metadados sociais conferidos, página 404 com status correto e sem indexação.
+- Perguntas frequentes operáveis por teclado; menu testado em retrato e paisagem.
+- Texto ampliado a 200% sem rolagem horizontal após correção da quebra das legendas dos números.
+- Preservados PDFs e destinos comerciais. Redirecionamentos permanentes preparados em `vercel.json` para a hospedagem.
+- Build e Astro/TypeScript aprovados; auditoria npm sem vulnerabilidades conhecidas na revisão.

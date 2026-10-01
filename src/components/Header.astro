@@ -30,7 +30,9 @@ import BookingLink from './BookingLink.astro';
 </header>
 <dialog id="mobile-menu" class="mobile-menu" aria-label="Navegação mobile">
   <div class="menu-top">
-    <span>ACQUAGYN</span>
+    <a class="brand" href="#inicio" aria-label="Acquagyn — início">
+      <img src="/images/logo.png" alt="Acquagyn" width="128" height="64" />
+    </a>
     <button class="menu-close" aria-label="Fechar menu">
       Fechar <span aria-hidden="true">×</span>
     </button>
@@ -38,7 +40,7 @@ import BookingLink from './BookingLink.astro';
   <nav aria-label="Navegação mobile">
     {navigation.map(([label, href], i) => (
       <a href={href}>
-        <span class="menu-index">0{i + 1}</span>
+        <span class="menu-index" aria-hidden="true">0{i + 1}</span>
         {label}
       </a>
     ))}

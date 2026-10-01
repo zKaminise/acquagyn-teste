@@ -4,6 +4,11 @@ export default defineConfig({
   timeout: 60000,
   fullyParallel: false,
   workers: 2,
+  projects: [
+    { name: 'chromium', use: { browserName: 'chromium' } },
+    { name: 'webkit', testMatch: /cross-browser\.spec\.ts/, use: { browserName: 'webkit' } },
+    { name: 'firefox', testMatch: /cross-browser\.spec\.ts/, use: { browserName: 'firefox' } },
+  ],
   reporter: [['list'], ['json', { outputFile: 'docs/qa/results.json' }]],
   use: {
     baseURL: 'http://127.0.0.1:4322',

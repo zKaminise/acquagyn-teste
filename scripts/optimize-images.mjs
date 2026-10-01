@@ -19,8 +19,8 @@ for (const [name, file] of Object.entries(files)) {
       .toFile(`public/images/${name}-${width}.webp`);
   }
 }
-await copyFile(path.join(source, 'logo-acquagyn-DURnffAc.png'), 'public/images/logo.png');
-await sharp(path.join(source, 'logo-acquagyn-DURnffAc.png'))
+await copyFile(path.join(source, 'logo-official.png'), 'public/images/logo.png');
+await sharp(path.join(source, 'logo-official.png'))
   .extract({ left: 130, top: 0, width: 220, height: 156 })
   .resize(64, 64, { fit: 'contain', background: '#ffffff' })
   .png()

@@ -220,7 +220,7 @@ test('content and CTAs work with JavaScript disabled', async ({ browser }) => {
   await page.goto('/');
   await expect(page.locator('h1')).toBeVisible();
   await expect(page.locator('.hero [data-booking]')).toBeVisible();
-  await expect(page.locator('.level-step')).toHaveCount(9);
+  await expect(page.locator('.level-step')).toHaveCount(8);
   const response = await page.request.get('/');
   expect(await response.text()).toContain('Seu próximo mergulho');
   await context.close();

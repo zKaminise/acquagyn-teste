@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout>
+<Layout title="Página não encontrada | Acquagyn" noindex>
   <main class="not-found">
     <img src="/images/logo.png" alt="Acquagyn" width="160" height="80" />
     <p>404 · PÁGINA NÃO ENCONTRADA</p>
@@ -29,7 +29,9 @@ import Layout from '../layouts/Layout.astro';
     text-align: center;
   }
   .not-found img {
-    filter: brightness(0) invert(1);
+    background: #fff;
+    padding: 12px;
+    width: 180px;
   }
   .not-found p {
     font-size: 12px;

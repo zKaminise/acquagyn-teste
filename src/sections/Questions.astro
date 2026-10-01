@@ -1,0 +1,47 @@
+---
+import { bookingUrl } from '../data/business';
+const questions = [
+  [
+    'Como agendar uma aula experimental?',
+    'Fale com a Acquagyn pelo WhatsApp e informe a modalidade desejada. A equipe confirma os horários disponíveis, o local da aula e as orientações para sua primeira visita.',
+  ],
+  [
+    'A partir de qual idade começam as aulas?',
+    'A jornada infantil começa no Baby 1, a partir de 6 meses. As etapas acompanham o desenvolvimento de cada aluno, com avaliação da equipe para orientar a indicação do nível.',
+  ],
+  [
+    'Preciso saber nadar para começar?',
+    'A escola tem etapas de adaptação e iniciação, além de aperfeiçoamento. Conte à equipe sobre sua experiência com a água para conhecer a turma indicada para você.',
+  ],
+  [
+    'Onde acontecem as aulas para adultos?',
+    'Consulte a oferta de natação para adultos na parceria com o SESI Roosevelt. A equipe confirma a unidade, as turmas e os horários no atendimento.',
+  ],
+];
+---
+
+<section class="questions section-light" id="duvidas" aria-labelledby="questions-title">
+  <div class="questions-intro">
+    <span class="eyebrow">ANTES DO PRIMEIRO MERGULHO</span>
+    <h2 id="questions-title" data-reveal>
+      Comece com
+      <br />
+      <em>tranquilidade.</em>
+    </h2>
+    <p>Um novo começo fica mais leve quando você sabe o próximo passo.</p>
+    <a class="text-link" href={bookingUrl()} target="_blank" rel="noopener noreferrer">
+      Converse com a nossa equipe ↗
+    </a>
+  </div>
+  <div class="questions-list">
+    {questions.map(([question, answer]) => (
+      <details>
+        <summary>
+          {question}
+          <span aria-hidden="true">+</span>
+        </summary>
+        <p>{answer}</p>
+      </details>
+    ))}
+  </div>
+</section>

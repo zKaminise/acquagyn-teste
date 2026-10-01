@@ -115,7 +115,8 @@ em {
   width: 126px;
   height: 62px;
   object-fit: contain;
-  filter: brightness(0) invert(1);
+  background: #fff;
+  padding: 8px 12px;
 }
 .desktop-nav {
   display: flex;
@@ -2622,5 +2623,247 @@ body.film-open {
 @media (prefers-reduced-motion: reduce) {
   .water-lines {
     opacity: 0.08;
+  }
+}
+
+/* Official brand, comfortable reading and production layout refinements. */
+.brand img {
+  width: 146px;
+  height: auto;
+  border-radius: 2px;
+}
+.site-header.is-scrolled .brand img {
+  width: 126px;
+}
+.footer-wordmark {
+  display: flex;
+  justify-content: center;
+  background: var(--paper);
+  margin: 30px 0;
+  padding: clamp(25px, 4vw, 64px);
+}
+.footer-wordmark img {
+  width: min(100%, 528px);
+}
+.story-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(20px, 4vw, 56px);
+}
+.story-stats > div {
+  min-width: 0;
+}
+.stat-label {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.hero-pool {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .has-motion .hero-pool {
+    display: block;
+    position: absolute;
+    inset: 0;
+    background: url('/images/pool-1280.webp') center 58% / cover;
+    opacity: 0;
+  }
+  .value-step {
+    min-height: 56vh;
+    padding: 65px 0;
+  }
+}
+.level-age,
+.modality-note,
+.method-disclaimer,
+.stat-label,
+.mascot-caption,
+.level-download,
+.footer-muted,
+.footer-bottom,
+.film-caption,
+.film-fallback {
+  font-size: 0.8125rem;
+}
+.level-description p,
+.tag-list li,
+.footer-grid p,
+.footer-grid address,
+.footer-grid > div > a,
+.footer-nav {
+  font-size: 0.9375rem;
+}
+.level-mascot {
+  width: 62px;
+  height: 62px;
+}
+.level-step summary {
+  min-height: 100px;
+}
+.floating-whatsapp {
+  bottom: max(20px, env(safe-area-inset-bottom));
+  right: max(20px, env(safe-area-inset-right));
+}
+.questions {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: clamp(40px, 7vw, 130px);
+  padding: 90px var(--gutter) 110px;
+  border-top: 1px solid #c9d9dc;
+}
+.questions h2 {
+  margin: 24px 0;
+  font-size: clamp(38px, 4vw, 72px);
+  line-height: 1.08;
+  letter-spacing: -0.05em;
+}
+.questions h2 em {
+  color: #337882;
+}
+.questions-intro > p {
+  max-width: 340px;
+  line-height: 1.8;
+}
+.questions-intro .text-link {
+  margin-top: 18px;
+}
+.questions-list details {
+  border-bottom: 1px solid #b7cdd2;
+}
+.questions-list details:first-child {
+  border-top: 1px solid #b7cdd2;
+}
+.questions-list summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 28px 0;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  cursor: pointer;
+  list-style: none;
+}
+.questions-list summary::-webkit-details-marker {
+  display: none;
+}
+.questions-list summary span {
+  font-size: 28px;
+  transition: transform 0.25s;
+}
+.questions-list details[open] summary span {
+  transform: rotate(45deg);
+}
+.questions-list details p {
+  padding: 0 30px 28px 0;
+  line-height: 1.85;
+  color: #365d6c;
+}
+@media (max-width: 767px) {
+  .brand img,
+  .site-header.is-scrolled .brand img {
+    width: 114px;
+    padding: 7px 9px;
+  }
+  .header-actions .button {
+    min-height: 44px;
+    font-size: 0.75rem;
+  }
+  .hero-stage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    min-height: 100svh;
+    padding: 200px var(--gutter) 100px;
+  }
+  .hero-copy {
+    position: relative;
+    inset: auto;
+  }
+  .hero-overline {
+    font-size: 0.625rem;
+  }
+  .hero-since {
+    font-size: 0.6875rem;
+  }
+  .hero-frame {
+    font-size: 0.5625rem;
+  }
+  .hero h1 {
+    font-size: clamp(36px, 10.6vw, 64px);
+  }
+  .level-mascot {
+    width: 48px;
+    height: 48px;
+  }
+  .level-name {
+    font-size: clamp(19px, 5.4vw, 28px);
+  }
+  .level-step summary {
+    gap: 12px;
+  }
+  .level-heading {
+    min-width: 0;
+  }
+  .level-age {
+    font-size: 0.75rem;
+  }
+  .questions {
+    grid-template-columns: 1fr;
+    padding: 60px var(--gutter);
+    gap: 30px;
+  }
+  .questions-list summary {
+    font-size: 1rem;
+    padding: 23px 0;
+  }
+  .footer-top {
+    flex-wrap: wrap;
+  }
+  .footer-nav {
+    flex-wrap: wrap;
+    gap: 12px 24px;
+  }
+  .footer-nav a {
+    padding: 10px 0;
+  }
+  .footer-bottom {
+    padding-bottom: 65px;
+  }
+  .mobile-menu {
+    padding-bottom: max(25px, env(safe-area-inset-bottom));
+    overflow-y: auto;
+  }
+}
+@media (max-width: 359px) {
+  :root {
+    --gutter: 18px;
+  }
+  .brand img,
+  .site-header.is-scrolled .brand img {
+    width: 100px;
+  }
+  .header-actions {
+    gap: 3px;
+  }
+  .header-actions .button {
+    padding: 9px;
+    font-size: 0.6875rem;
+  }
+}
+@media (max-height: 550px) and (orientation: landscape) {
+  .mobile-menu nav {
+    margin: 15px 0;
+  }
+  .mobile-menu nav > a {
+    font-size: 22px;
+    padding: 8px 0;
+  }
+  .mobile-menu .button {
+    min-height: 44px;
+  }
+  .mobile-menu .menu-location {
+    margin-bottom: 0;
   }
 }

@@ -8,24 +8,18 @@ interface Props {
   width?: number;
   height?: number;
 }
-const {
-  name,
-  alt,
-  class: className,
-  eager = false,
-  sizes = '100vw',
-  width,
-  height,
-} = Astro.props;
+const { name, alt, class: className, eager = false, sizes = '100vw', width, height } = Astro.props;
 const sourceWidth = name === 'accessibility' ? 960 : 1280;
 const sourceHeight = name === 'accessibility' ? 1280 : 960;
-const candidates = [640, 960, 1280].filter(candidate => candidate <= sourceWidth);
+const candidates = [640, 960, 1280].filter((candidate) => candidate <= sourceWidth);
 ---
 
 <img
   class={className}
   src={`/images/${name}-${sourceWidth}.webp`}
-  srcset={candidates.map(candidate => `/images/${name}-${candidate}.webp ${candidate}w`).join(', ')}
+  srcset={candidates
+    .map((candidate) => `/images/${name}-${candidate}.webp ${candidate}w`)
+    .join(', ')}
   sizes={sizes}
   width={width ?? sourceWidth}
   height={height ?? sourceHeight}

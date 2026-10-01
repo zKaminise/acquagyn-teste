@@ -1,6 +1,6 @@
 # Acervo da LP
 
-As cinco fotos da unidade, o logotipo e os oito mascotes vêm do site original. Os originais estão preservados em `assets/original/`. O inventário das 19 imagens encontradas, incluindo dimensões e fontes, está em `docs/IMAGE_INVENTORY.md` e `docs/image-inventory.json`.
+As cinco fotos da unidade e os oito mascotes vêm do site original. A logo em uso foi enviada pelo usuário em 30/09/2026 e está preservada sem alteração em `assets/original/logo-official.png` e `public/images/logo.png`. Sua aplicação mantém as cores originais sobre fundo claro. O inventário das 19 imagens inicialmente encontradas está em `docs/IMAGE_INVENTORY.md` e `docs/image-inventory.json`.
 
 **Classificação:** A = adequada para grande destaque; B = útil para seções, com limite de resolução; C = substituir ou não utilizar como evidência da unidade.
 

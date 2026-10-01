@@ -21,9 +21,9 @@ import { bookingUrl } from '../data/business';
         primeira descoberta ao aperfeiçoamento, existe um próximo passo.
       </p>
       <div class="method-mark" aria-hidden="true">
-        <span>09</span>
+        <span>08</span>
         <div>
-          NÍVEIS ANUNCIADOS.
+          ETAPAS DE APRENDIZAGEM.
           <br />
           CADA ETAPA,
           <br />
@@ -31,8 +31,8 @@ import { bookingUrl } from '../data/business';
         </div>
       </div>
       <p class="method-disclaimer">
-        Oito etapas descritas e uma em confirmação. As idades são referências. A avaliação da equipe
-        orienta a indicação do nível.
+        Do bebê ao adolescente, cada etapa respeita o desenvolvimento individual. As idades são
+        referências; a avaliação da equipe orienta a indicação do nível.
       </p>
       <a class="text-link" href={bookingUrl()} target="_blank" rel="noopener noreferrer">
         Descubra seu ponto de partida <Arrow diagonal />
@@ -44,7 +44,7 @@ import { bookingUrl } from '../data/business';
       </div>
       <ol class="level-journey">
         {levels.map((level, i) => (
-          <li class:list={['level-step', { 'level-pending': level.pending }]}>
+          <li class="level-step">
             <span class="level-marker" aria-hidden="true">
               {String(i + 1).padStart(2, '0')}
             </span>

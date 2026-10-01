@@ -38,6 +38,18 @@ export function initMotion() {
         heroTimeline
           .fromTo('.hero-media img', { scale: 1.28 }, { scale: 1, duration: 1, ease: 'none' }, 0)
           .to('.hero h1', { opacity: 0, y: -24, duration: 0.22 }, 0.22)
+          .fromTo(
+            '.hero-pool',
+            { opacity: 0, scale: 1.08, clipPath: 'inset(100% 0 0 0)' },
+            {
+              opacity: 0.85,
+              scale: 1,
+              clipPath: 'inset(0% 0 0 0)',
+              duration: 0.6,
+              ease: 'power1.inOut',
+            },
+            0.18,
+          )
           .fromTo('.hero-next', { opacity: 0, y: 35 }, { opacity: 1, y: 0, duration: 0.28 }, 0.48)
           .to('.water-light', { xPercent: -30, yPercent: 35, duration: 1, ease: 'none' }, 0);
       } else {

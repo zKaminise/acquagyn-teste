@@ -104,13 +104,6 @@ export const levels = [
     image: 'cavalo',
     description: 'Uma nova etapa de aperfeiçoamento dos estilos e dos movimentos na água.',
   },
-  {
-    name: '9º nível',
-    age: 'Detalhes em atualização',
-    description:
-      'A definição deste nível está pendente de confirmação. Converse com a equipe para conhecer a jornada indicada para você.',
-    pending: true,
-  },
 ];
 
 export const values = [

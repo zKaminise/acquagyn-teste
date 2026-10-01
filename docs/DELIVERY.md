@@ -1,6 +1,6 @@
 # Entrega — nova LP Acquagyn
 
-Projeto salvo em `D:\Importante\Codex\Acquagyn`, sem publicação em produção.
+Registro da entrega inicial de 13/09/2026, anterior à publicação. A revisão autorizada em 30/09/2026 e os detalhes atuais de publicação estão em `RELEASE-2026-09-30.md` e no README. As observações abaixo descrevem a primeira versão.
 
 ## Resultado implementado
 

@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
+  "engines": { "node": "22.x" },
   "scripts": {
     "dev": "astro dev --host 127.0.0.1 --port 4321",
     "build": "astro build",
     "preview": "node scripts/serve-build.mjs",
-    "test": "playwright test",
+    "test": "playwright test --project=chromium --project=webkit",
+    "test:firefox": "playwright test --project=firefox",
     "images": "node scripts/optimize-images.mjs",
     "check": "astro check",
     "format": "prettier --write src scripts tests *.mjs *.ts"

@@ -15,6 +15,7 @@ const types = {
   '.pdf': 'application/pdf',
   '.xml': 'application/xml',
   '.txt': 'text/plain',
+  '.mp4': 'video/mp4',
 };
 createServer(async (request, response) => {
   try {
